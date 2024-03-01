@@ -36,4 +36,4 @@ output_path = '../static/people.json'
 with open(output_path, 'w') as f:
     json.dump(people, f)
 
-output_path
+# output_path
