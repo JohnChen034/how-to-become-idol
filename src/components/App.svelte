@@ -1,13 +1,22 @@
 <script>
-  // Write your JS here, or import other files
+  import { onMount } from 'svelte';
+
+  let people = [];
+
+  onMount(async () => {
+    const response = await fetch('people.json');
+    people = await response.json();
+  });
 </script>
 
-<main>
-  <h1>Svelte template</h1>
-
-  <p>Write your HTML here</p>
-</main>
-
-<style>
-  /* Write your CSS here */
-</style>
+<svg width="5000" height="5000">
+  {#each people as person (person.id)}
+    <image
+      href="/person_icon1.jpeg"
+      x={person.x - person.radius}
+      y={person.y - person.radius}
+      width={person.radius * 2}
+      height={person.radius * 2}
+    />
+  {/each}
+</svg>
