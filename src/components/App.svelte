@@ -18,5 +18,9 @@
       width={person.radius * 2}
       height={person.radius * 2}
     />
+
+
+
+
   {/each}
 </svg>
