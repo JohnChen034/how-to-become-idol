@@ -1,5 +1,9 @@
 # svelte-template
 
+
+https://johnchen034.github.io/how-to-become-idol/
+
+
 This repo contains a template for a Svelte project that uses D3. It has extra
 configuration to make it easy to deploy to GitHub pages.
 
