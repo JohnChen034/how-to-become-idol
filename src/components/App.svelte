@@ -8,7 +8,7 @@
 </script>
 
 <main>
-  <h1>Interactive Colored Triangle Layers</h1>
+  <h1>The Jorney of a Nobody to a Super Idol</h1>
 
   <button on:click={showNextLayer}>Show Next Layer</button>
 
