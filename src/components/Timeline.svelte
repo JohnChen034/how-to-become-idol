@@ -7,8 +7,8 @@
         { year: "Year 0~1", label: "Audition", color: "#f1c40f" },
         { year: "Year 1~5", label: "Trainee Start", color: "#e74c3c" },
         { year: "Year 5", label: "Debut", color: "#2ecc71" },
-        { year: "Year 5~", label: "Release songs and Albums", color: "#9b59b6" },
-        { year: "Year ~", label: "Other Idol activities", color: "#3498db" },
+        { year: "???", label: "???", color: "#9b59b6" },
+        { year: "???", label: "???", color: "#3498db" },
 
     ];
 
