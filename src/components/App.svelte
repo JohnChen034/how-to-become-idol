@@ -57,7 +57,7 @@
                fill="#e3c1f4"
                class="layer"
       />
-      <text x="100" y="35" text-anchor="middle" font-size=10 font-family="Arial" fill="black">Super Star</text>
+      <text x="100" y="35" text-anchor="middle" font-size=10 font-family="Arial" fill="black">Super Idol</text>
     {/if}
 
   </svg>
