@@ -1,6 +1,8 @@
 <script>
   import {fade} from 'svelte/transition';
   import FlipCard from './FlipCard.svelte';
+  import Timeline from './Timeline.svelte';
+  import TraineeDebutRate from "./TraineeDebutRate.svelte";
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -12,7 +14,13 @@
   <div class="head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
     <FlipCard/>
+
   </div>
+
+  <p>some content here, introduction stuff</p>
+  <Timeline/>
+
+  <TraineeDebutRate></TraineeDebutRate>
 
   <svg width="1000" height="1000" viewBox="20 0 160 200" xmlns="http://www.w3.org/2000/svg" on:click={showNextLayer}>
     <text x="100" y="170" text-anchor="middle" font-size="16" font-family="Arial" fill="black">Click to show more!!
@@ -55,16 +63,17 @@
   </svg>
 
 
+
 </main>
 
 <style>
   main {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200vh;
+    /*height: 1000vh;*/
     margin: 0 auto;
   }
 
