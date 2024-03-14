@@ -28,8 +28,6 @@
 
   </div>
 
-  <p>some content here, introduction stuff</p>
-
   <BeforeTrainee/>
 
   <Timeline/>
