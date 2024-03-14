@@ -4,6 +4,7 @@
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import kpopTrendLineChart from "./kpopTrendLineChart.svelte";
+  import brforeTrainee from "./beforeTrainee.svelte";
   import { onMount } from "svelte";
 
   let layerVisible = 0;
