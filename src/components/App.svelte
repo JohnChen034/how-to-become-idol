@@ -9,6 +9,14 @@
   function showNextLayer() {
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
+
+  let kpopTrend;
+  onMount(async () => {
+    const response = await fetch('kpopTrend.json');
+    kpopTrend = await response.json();
+  });
+
+
 </script>
 
 <main>
@@ -19,8 +27,8 @@
   </div>
 
   <p>some content here, introduction stuff</p>
-  <kpopTrendLineChart></kpopTrendLineChart>
-  
+  <kpopTrendLineChart kpopTrend={kpopTrend}/>
+
   <Timeline/>
 
   <TraineeDebutRate></TraineeDebutRate>

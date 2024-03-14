@@ -2,21 +2,14 @@
   import * as d3 from "d3";
   import { onMount } from "svelte";
 
-  let kpopTrend;
-
-  onMount(async () => {
-    const response = await fetch('kpopTrend.json');
-    kpopTrend = await response.json();
-    // You would then pass kpopTrendData to your D3 chart-drawing logic
-  });
-
-  // The chart dimensions and margins as optional props.
   export let width = 1000;
   export let height = 400;
   export let marginTop = 60;
   export let marginRight = 30;
   export let marginBottom = 60;
   export let marginLeft = 60;
+
+  export let KpopTrend
 
   const startDate = d3.timeParse("%Y-%m")("2004-01");
   const endDate = d3.timeParse("%Y-%m")("2024-03");
