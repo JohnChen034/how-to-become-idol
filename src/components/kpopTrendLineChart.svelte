@@ -1,6 +1,5 @@
 <script>
   import * as d3 from "d3";
-  import { onMount } from "svelte";
 
   export let width = 1000;
   export let height = 400;
@@ -144,13 +143,12 @@
       {/each}
     </g>
 
-    {#each lines as line, index}
-      <path
-        fill="red"
-        stroke="red"
-        stroke-width="3"
-        d={kpopTrend}
-      />
-    {/each}
+    <path
+    fill="red"
+    stroke="red"
+    stroke-width="3"
+    d={kpopTrend}
+    />
+
   </svg>
 </main>

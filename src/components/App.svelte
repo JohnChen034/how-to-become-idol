@@ -11,7 +11,7 @@
   }
 
   let kpopTrend;
-  
+
   onMount(async () => {
     const response = await fetch('kpopTrend.json');
     kpopTrend = await response.json();
@@ -28,7 +28,8 @@
   </div>
 
   <p>some content here, introduction stuff</p>
-  <kpopTrendLineChart kpopTrend={kpopTrend}/>
+
+  <kpopTrendLineChart kpopTrend={kpopTrend}></kpopTrendLineChart>
 
   <Timeline/>
 
