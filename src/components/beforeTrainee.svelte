@@ -1,3 +1,21 @@
+<script>
+    let showImage = false;
+    const building = 'building.jpg';
+</script>
+
+<button on:click={() => showImage = !showImage}>
+    {showImage ? 'Hide Image' : 'Show Image'}
+</button>
+
+{#if showImage}
+    <img src={building} alt="Example">
+{/if}
+
+
+
+
+
+
 <div class=container>
     <h1>How to become an Idol Trainee</h1>
     <p>In order to become an idol, you have to be an idol trainee who has a contract with an agency.</p>
