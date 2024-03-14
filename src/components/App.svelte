@@ -29,8 +29,9 @@
   </div>
 
   <p>some content here, introduction stuff</p>
+  <p>some content here, introduction stuff</p>
 
-  <kpopTrendLineChart kpopTrend={kpopTrend}>james</kpopTrendLineChart>
+  <kpopTrendLineChart kpopTrend={kpopTrend}></kpopTrendLineChart>
 
   <Timeline/>
 
