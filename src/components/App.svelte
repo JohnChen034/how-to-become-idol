@@ -4,19 +4,13 @@
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import kpopTrendLineChart from "./kpopTrendLineChart.svelte";
+  import kpopTrendData from "./kpopTrend.json";
   import { onMount } from "svelte";
 
   let layerVisible = 0;
   function showNextLayer() {
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
-
-  let kpopTrendData;
-
-  onMount(async () => {
-    const response = await fetch('/static/kpopTrend.json');
-    kpopTrendData = await response.json();
-  });
 
 
 </script>
@@ -30,7 +24,7 @@
 
   <p>some content here, introduction stuff</p>
 
-  <kpopTrendLineChart data={kpopTrendData}></kpopTrendLineChart>
+  <kpopTrendLineChart {kpopTrendData}/>
 
   <Timeline/>
 
