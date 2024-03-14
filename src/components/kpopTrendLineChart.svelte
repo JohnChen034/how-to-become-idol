@@ -153,7 +153,7 @@
 
     {#each lines as line, index}
       <path
-        fill="none"
+        fill="red"
         stroke="red"
         stroke-width="3"
         d={kpopTrend}

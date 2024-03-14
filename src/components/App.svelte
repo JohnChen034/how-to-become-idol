@@ -20,6 +20,7 @@
 
   <p>some content here, introduction stuff</p>
   <kpopTrendLineChart></kpopTrendLineChart>
+  
   <Timeline/>
 
   <TraineeDebutRate></TraineeDebutRate>
