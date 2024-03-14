@@ -1,5 +1,6 @@
 <script>
   import * as d3 from "d3";
+  import { onMount } from "svelte";
 
   export let width = 1000;
   export let height = 400;
