@@ -2,7 +2,7 @@
   import * as d3 from "d3";
   import { onMount } from "svelte";
 
-  let kpopTrendData;
+  let kpopTrend;
 
   onMount(async () => {
     const response = await fetch('kpopTrend.json');
