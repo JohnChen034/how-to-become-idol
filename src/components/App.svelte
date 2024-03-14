@@ -3,7 +3,6 @@
   import FlipCard from './FlipCard.svelte';
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import KpopTrendLineChart from "./kpopTrendLineChart.svelte"
   import BeforeTrainee from "./beforeTrainee.svelte";
   import { onMount } from "svelte";
 
@@ -30,8 +29,6 @@
   </div>
 
   <p>some content here, introduction stuff</p>
-
-  <KpopTrendLineChart {kpopTrendData}></KpopTrendLineChart>
 
   <BeforeTrainee/>
 
