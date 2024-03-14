@@ -4,7 +4,7 @@
 
   // Function to change the image and the selected button
   function showImage(imageNumber) {
-    currentImage = `street_casting/Slide${imageNumber}.png`;
+    currentImage = `Slide${imageNumber}.PNG`;
     selectedButton = imageNumber;
   }
 </script>
@@ -28,6 +28,8 @@
 {#if currentImage}
   <img src={currentImage} width=500 height=200 alt="Displayed image" />
 {/if}
+
+<img scr="Slide1.PNG"/>
 
 
 
