@@ -3,7 +3,7 @@
   import FlipCard from './FlipCard.svelte';
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import kpopTrendLineChart from "./kpopTrendLineChart.svelte"
+  import kpopTrendLineChart from "./kpopTrendLineChart.svelte";
 
   let layerVisible = 0;
   function showNextLayer() {

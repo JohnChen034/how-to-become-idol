@@ -2,8 +2,13 @@
   import * as d3 from "d3";
   import { onMount } from "svelte";
 
-  // Receive plot data as prop.
-  export let kpopTrend;
+  let kpopTrendData;
+
+  onMount(async () => {
+    const response = await fetch('kpopTrend.json');
+    kpopTrend = await response.json();
+    // You would then pass kpopTrendData to your D3 chart-drawing logic
+  });
 
   // The chart dimensions and margins as optional props.
   export let width = 1000;
