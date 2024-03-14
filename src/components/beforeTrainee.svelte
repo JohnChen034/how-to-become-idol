@@ -26,7 +26,7 @@
 
 <!-- Image Display -->
 {#if currentImage}
-  <img src={currentImage} alt="Displayed image" />
+  <img src={currentImage} width=500 height=200 alt="Displayed image" />
 {/if}
 
 
