@@ -26,10 +26,8 @@
 
 <!-- Image Display -->
 {#if currentImage}
-  <img src={currentImage} width=500 height=200 alt="Displayed image" />
+  <img src={currentImage} width=1000 height=500 alt="Displayed image" />
 {/if}
-
-<img scr="Slide1.PNG"/>
 
 
 
