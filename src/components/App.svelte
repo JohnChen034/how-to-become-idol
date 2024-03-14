@@ -3,6 +3,7 @@
   import FlipCard from './FlipCard.svelte';
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
+  import kpopTrendLineChart from "./kpopTrendLineChart.svelte"
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -18,6 +19,7 @@
   </div>
 
   <p>some content here, introduction stuff</p>
+  <kpopTrendLineChart></kpopTrendLineChart>
   <Timeline/>
 
   <TraineeDebutRate></TraineeDebutRate>
