@@ -3,7 +3,7 @@
   import FlipCard from './FlipCard.svelte';
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import kpopTrend from "./kpopTrendLineChart.svelte";
+  import kpopTrendLineChart from "./kpopTrendLineChart.svelte";
   import { onMount } from "svelte";
 
   let layerVisible = 0;
@@ -11,11 +11,11 @@
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
 
-  let kpopData;
+  let kpopTrendData;
 
   onMount(async () => {
-    const response = await fetch('kpopTrend.json');
-    kpopData = await response.json();
+    const response = await fetch('/static/kpopTrend.json');
+    kpopTrendData = await response.json();
   });
 
 
@@ -30,7 +30,7 @@
 
   <p>some content here, introduction stuff</p>
 
-  <kpopTrendLineChart kpopTrend={kpopData}></kpopTrendLineChart>
+  <kpopTrendLineChart kpopTrend={kpopTrendData}></kpopTrendLineChart>
 
   <Timeline/>
 

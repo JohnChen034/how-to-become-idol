@@ -148,7 +148,7 @@
     fill="red"
     stroke="red"
     stroke-width="3"
-    d={kpopTrend}
+    d={line(KpopTrend)}
     />
 
   </svg>
