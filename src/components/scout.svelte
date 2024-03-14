@@ -1,6 +1,6 @@
 <script>
-  let currentImage = Slide1.PNG;
-  let selectedButton = 1;
+  let currentImage = null;
+  let selectedButton = null;
 
   // Function to change the image and the selected button
   function showImage(imageNumber) {
