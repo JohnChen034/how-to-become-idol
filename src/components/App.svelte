@@ -11,6 +11,7 @@
   }
 
   let kpopTrend;
+  
   onMount(async () => {
     const response = await fetch('kpopTrend.json');
     kpopTrend = await response.json();
