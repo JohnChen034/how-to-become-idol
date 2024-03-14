@@ -30,7 +30,7 @@
 
   <p>some content here, introduction stuff</p>
 
-  <kpopTrendLineChart {kpopTrendData}></kpopTrendLineChart>
+  <kpopTrendLineChart data={kpopTrendData}></kpopTrendLineChart>
 
   <Timeline/>
 
