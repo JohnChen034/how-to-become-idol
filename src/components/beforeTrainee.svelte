@@ -1,15 +1,34 @@
 <script>
-    let showImage = false;
-    const building = 'building.jpg';
+  let currentImage = null;
+  let selectedButton = null;
+
+  // Function to change the image and the selected button
+  function showImage(imageNumber) {
+    currentImage = "street_casting/Slide${imageNumber}.png";
+    selectedButton = imageNumber;
+  }
 </script>
 
-<button on:click={() => showImage = !showImage}>
-    {showImage ? 'Hide Image' : 'Show Image'}
-</button>
+<style>
+  .selected {
+    background-color: #007bff; /* Blue color, you can change it to whatever you want */
+    color: white;
+  }
+</style>
 
-{#if showImage}
-    <img src={building} alt="Example">
+<!-- Buttons -->
+<button on:click={() => showImage(1)} class:selected={selectedButton === 1}>1</button>
+<button on:click={() => showImage(2)} class:selected={selectedButton === 2}>2</button>
+<button on:click={() => showImage(3)} class:selected={selectedButton === 3}>3</button>
+<button on:click={() => showImage(4)} class:selected={selectedButton === 4}>4</button>
+<button on:click={() => showImage(5)} class:selected={selectedButton === 5}>5</button>
+<button on:click={() => showImage(6)} class:selected={selectedButton === 6}>6</button>
+
+<!-- Image Display -->
+{#if currentImage}
+  <img src={currentImage} alt="Displayed image" />
 {/if}
+
 
 
 
