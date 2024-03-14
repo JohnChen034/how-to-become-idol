@@ -11,10 +11,12 @@
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
 
-   onMount(async () => {
-        const res = await fetch('kpopTrend.json');
-        kpopTrend = await res.json();
-    });
+  let kpopTrendData;
+
+  onMount(async () => {
+    const response = await fetch('/static/kpopTrend.json');
+    kpopTrendData = await response.json();
+  });
 
 
 </script>
@@ -28,7 +30,7 @@
 
   <p>some content here, introduction stuff</p>
 
-  <kpopTrendLineChart data = {kpopTrendData}/>
+  <kpopTrendLineChart data={kpopTrendData}></kpopTrendLineChart>
 
   <Timeline/>
 
