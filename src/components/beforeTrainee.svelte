@@ -4,7 +4,7 @@
 
   // Function to change the image and the selected button
   function showImage(imageNumber) {
-    currentImage = "street_casting/Slide${imageNumber}.png";
+    currentImage = `street_casting/Slide${imageNumber}.png`;
     selectedButton = imageNumber;
   }
 </script>
