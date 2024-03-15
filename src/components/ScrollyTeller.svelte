@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section>
+    <section style="background-color: black;">
       This is the second section.
       <Hook />
     </section>

@@ -28,6 +28,7 @@
     font-size: 50px;
     font-family: 'Archivo Black';
     text-align: left
+    color: white;
   }
 
   @keyframes fadeIn {
