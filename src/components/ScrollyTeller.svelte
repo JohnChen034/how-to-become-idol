@@ -75,19 +75,23 @@
   }
 
   .foreground {
-    width: 100%;
-    margin: 0;
+    width: 50%;
+    margin: 0 auto;
     height: auto;
     position: relative;
     outline: red solid 3px;
   }
 
-  .section {
-    width: 100%;
-    height: 200vh;
-    background-color: #DDBBDF;
-    text-align: center;
+  section {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
+    /* color: white; */
     outline: magenta solid 3px;
+    text-align: center;
+    max-width: 750px; /* adjust at will */
+    color: black;
+    padding: 1em;
+    margin: 0 0 2em 0;
   }
 
   .head_container {
