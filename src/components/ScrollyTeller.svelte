@@ -32,12 +32,14 @@
 
     
     <section style="">
-      <div class="head_container">
+      <p2>
+        <div class="head_container">
         <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
           The Journey of a Nobody to a Super Idol
         </h1>
         <FlipCard/>
-      </div>
+        </div>
+      </p2>
     </section>
 
       
@@ -94,18 +96,20 @@
     margin: 0 0 2em 0;
   }
 
+  .p2 {
+    position: relative;
+  }
+
   .head_container {
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     background-color: white;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
-
+    position: absolute;
   }
 
   .h1 {
