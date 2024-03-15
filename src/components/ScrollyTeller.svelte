@@ -85,7 +85,7 @@
   }
 
   section {
-    width: 70%
+    width: 70%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
