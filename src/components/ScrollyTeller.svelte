@@ -69,6 +69,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    outline: green solid 3px;
   }
 
   .foreground {
@@ -76,6 +77,7 @@
     margin: 0;
     height: 100vh;
     position: relative;
+    outline: red solid 3px;
   }
 
   section {
@@ -84,6 +86,7 @@
     background-color: white;
     text-align: center;
     color: black;
+    outline: magenta solid 3px;
   }
 
   .head_container {
@@ -99,8 +102,8 @@
   }
 
   .container {
-    width: 500
-    height: 200
+    width: 500px;
+    height: 200px;
   }
 
   h1 {
