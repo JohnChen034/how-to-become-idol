@@ -6,6 +6,7 @@
   import BeforeTrainee from "./beforeTrainee.svelte";
   import Hook from "./hook.svelte"
   import { onMount } from "svelte";
+  import ScrollyTeller from "./ScrollyTeller.svelte"
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -71,6 +72,9 @@
     {/if}
 
   </svg>
+
+
+  <ScrollyTeller />
 
 
 
