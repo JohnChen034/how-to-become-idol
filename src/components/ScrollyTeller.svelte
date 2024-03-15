@@ -71,6 +71,20 @@
     outline: green solid 3px;
   }
 
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bts.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* 20% transparency */
+    z-index: -1; /* Ensures the pseudo-element is behind the content */
+  }
+
   .foreground {
     width: 100%;
     margin: 0;
@@ -84,10 +98,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    align-items: center; 
-    justify-content:center;
-
-    color: black;
+    align-items: center;
     outline: magenta solid 3px;
   }
 
