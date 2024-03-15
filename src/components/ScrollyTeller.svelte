@@ -103,8 +103,10 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     background-color: white;
-    border-radius: 50px 50px 50px 50px;
-    overflow: hidden;
+    display: flex; /* Use flexbox for positioning the child */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
   }
 
   .h1 {
