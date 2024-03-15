@@ -1,42 +1,42 @@
 <script>
-    let currentImage = null;
-    let selectedButton = null;
+  import { onMount } from 'svelte';
 
-    // Function to change the image and the selected button
-    function showImage(imageNumber) {
-        currentImage = `bts${imageNumber}.PNG`;
-        selectedButton = imageNumber;
-    }
+  let text = "Have you ever think of becoming a K-pop idol?";
+  let words = text.split(' ');
+  let displayWords = [];
+
+  onMount(() => {
+    words.forEach((word, index) => {
+      setTimeout(() => {
+        displayWords = [...displayWords, word];
+      }, 500 * index); // Adjust the delay as needed
+    });
+  });
 </script>
 
-<div class=container>
-    <h1>The Rise of K-pop</h1>
-    <p>K-pop has huge increase in popularity. More and more K-pop groups get recognition by global music awards</p>
-
-    <h1>Street Casting</h1>
-    <p>Street casting is that the casting staff in agencies scouts and casts people on the streets to finds and fosters new talent.</p>
-    <p>The following slides shows of how casting staff find new talent</p>
-
-    <!-- Buttons -->
-    <button on:click={() => showImage(1)} class:selected={selectedButton === 1}>1</button>
-    <button on:click={() => showImage(2)} class:selected={selectedButton === 2}>2</button>
-    <button on:click={() => showImage(3)} class:selected={selectedButton === 3}>3</button>
-    <button on:click={() => showImage(4)} class:selected={selectedButton === 4}>4</button>
-    <button on:click={() => showImage(5)} class:selected={selectedButton === 5}>5</button>
-
-<!-- Image Display -->
-{#if currentImage}
-  <img src={currentImage} width=1000 height=500 alt="Displayed image" />
-{/if}
-
-    <h2>The Career Path of BTS</h2>
-    <h2>We would like to explore:</h2>
-    <p>The mystery behind K-pop agencies transforming ordinary people into K-pop idols</p>
-</div>
-
 <style>
-  .selected {
-    background-color: #007bff; /* Blue color, you can change it to whatever you want */
-    color: white;
+  .word {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 </style>
+
+<div>
+  {#each displayWords as word, index (word)}
+    <span class="word" style="animation-delay: {index * 0.5}s">{word} </span>
+  {/each}
+</div>
+
+
+
+
+<p>Have you ever think of becoming an K-pop idol?</p>
+<p>If yes</p>
+<p>Do you know how difficult it is to be selected as a trainee in the audition</p>
+<p>Do you know how much effort it takes to debut</p>
