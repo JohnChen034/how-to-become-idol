@@ -81,7 +81,7 @@
   }
 
   .foreground {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     height: auto;
     position: relative;
