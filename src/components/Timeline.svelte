@@ -84,14 +84,6 @@
 </svg>
 
 <style>
-    :global(body) {
-        display: flex;
-        /*justify-content: center; !* Center the SVG horizontally *!*/
-        /*align-items: center; !* Center the SVG vertically *!*/
-        height: 150vh; /* Take full viewport height */
-        margin: 0;
-		margin-top: auto;
-    }
     svg {
         overflow: visible;
     }
