@@ -1,5 +1,4 @@
 <script>
-
     let dots = [];
     const center = {x: 750, y: 750}; // Center of the circle
     const maxRadius = 700; // Maximum radius of the filled circle
