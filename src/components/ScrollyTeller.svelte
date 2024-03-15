@@ -42,7 +42,7 @@
     </section>
 
       
-    <section style="ackground-color:#b37eb5;">
+    <section style="background-color:#b37eb5;">
         <Hook />
     </section>
 
