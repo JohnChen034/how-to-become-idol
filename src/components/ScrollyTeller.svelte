@@ -32,15 +32,17 @@
     
     <section style="background-color:#b37eb5;">
       <div class="head_container">
-        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px;">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:100px;">
           The Journey of a Nobody to a Super Idol
         </h1>
         <FlipCard/>
+        <p>Darren Liu</p>
+        <p>Jiayu Chen</p>
       </div>
     </section>
 
       
-    <section style="">
+    <section style="ackground-color:#b37eb5;">
         <Hook />
     </section>
 
@@ -84,7 +86,7 @@
 
   section {
     height: 100vh;
-    width: 97%;
+    width: 99%;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
     text-align: center;
