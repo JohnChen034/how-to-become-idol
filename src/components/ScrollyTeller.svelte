@@ -75,7 +75,7 @@
   }
 
   .foreground {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     height: auto;
     position: relative;
