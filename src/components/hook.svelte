@@ -22,9 +22,9 @@
   .sentence {
     opacity: 0;
     animation: fadeIn 1s forwards;
-    margin-bottom: 10px; /* Space between sentences */
-    font-size: 50px
-    font-family: Arial, sans-serif
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: Arial;
   }
 
   @keyframes fadeIn {
