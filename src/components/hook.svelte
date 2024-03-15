@@ -27,7 +27,7 @@
     margin-bottom: 10px;
     font-size: 50px;
     font-family: 'Archivo Black';
-    text-align: left
+    text-align: left;
     color: white;
   }
 
