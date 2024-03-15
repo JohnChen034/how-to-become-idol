@@ -97,7 +97,7 @@
 
   .head_container {
     height: 90vh;
-    width: 
+    width: 80vw;
     gap: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
