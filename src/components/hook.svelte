@@ -20,13 +20,14 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
   .sentence {
     opacity: 0;
     animation: fadeIn 1s forwards;
     margin-bottom: 10px;
     font-size: 50px;
-    font-family: 'Archivo Black';
+    font-family: 'Roboto';
     text-align: left;
     color: #2B2929; /* dark Grey */;
   }
