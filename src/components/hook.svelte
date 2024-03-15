@@ -30,7 +30,7 @@
     font-size: 30px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 1000;
-    text-align: left;
+    text-align: center;
     color: #423C3C; /* dark Grey */;
   }
 
