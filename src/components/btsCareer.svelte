@@ -4,7 +4,7 @@
 
   // Function to change the image and the selected button
   function showImage(imageNumber) {
-    currentImage = `Slide${imageNumber}.PNG`;
+    currentImage = `bts${imageNumber}.PNG`;
     selectedButton = imageNumber;
   }
 </script>
@@ -27,7 +27,6 @@
 <button on:click={() => showImage(3)} class:selected={selectedButton === 3}>3</button>
 <button on:click={() => showImage(4)} class:selected={selectedButton === 4}>4</button>
 <button on:click={() => showImage(5)} class:selected={selectedButton === 5}>5</button>
-<button on:click={() => showImage(6)} class:selected={selectedButton === 6}>6</button>
 
 <!-- Image Display -->
 {#if currentImage}

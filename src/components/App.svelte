@@ -4,6 +4,7 @@
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import BeforeTrainee from "./beforeTrainee.svelte";
+  import Hook from "./hook.svelte"
   import { onMount } from "svelte";
 
   let layerVisible = 0;
@@ -27,6 +28,8 @@
     <FlipCard/>
 
   </div>
+
+  <Hook/>
 
   <BeforeTrainee/>
 

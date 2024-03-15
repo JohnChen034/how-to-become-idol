@@ -5,17 +5,11 @@
 </script>
 
 <div class=container>
-    <h1>How to become an Idol Trainee</h1>
-    <p>In order to become an idol, you have to be an idol trainee who has a contract with an agency.</p>
-    <p>Therefore, what are the paths to become an idol trainee?</p>
+    <h1>How to become a Trainee</h1>
+    <p>Trainees are the prerequisite of becoming a K-pop idol. Debuting without being trainee is something impossibly happens in the K-pop industry</p>
+    <p>The following methods are the ways to become a K-pop idol:</p>
 
     <StreetCasting/>
     <Audition/>
     <Academy/>
 </div>
-
-
-
-
-
-
