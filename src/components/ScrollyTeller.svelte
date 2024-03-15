@@ -40,7 +40,7 @@
 
       
     <section style="background-color: white;">
-      <div class="head_container" >
+      <div class="container">
           <Hook />
       </div>
     </section>
@@ -69,11 +69,10 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    outline: green solid 3px;
   }
 
   .foreground {
-    width: 100%;
+    width: 70%;
     margin: 0;
     height: auto;
     position: relative;
