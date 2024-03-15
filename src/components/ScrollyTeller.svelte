@@ -98,6 +98,7 @@
 
   .p2 {
     position: relative;
+    outline: blue solid 3px;
   }
 
   .head_container {
