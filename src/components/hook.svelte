@@ -26,9 +26,9 @@
   .sentence {
     opacity: 0;
     animation: fadeIn 1s forwards;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 80px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     text-align: center;
