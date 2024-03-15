@@ -12,26 +12,20 @@
   function showNextLayer() {
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
-
-
 </script>
+
 
 <main>
   <div class="head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
     <FlipCard/>
-
   </div>
-
 
   <Hook />
 
-
   <Timeline />
 
-
   <TraineeDebutRate />
-
 
   <svg width="1000" height="1000" viewBox="20 0 160 200" xmlns="http://www.w3.org/2000/svg" on:click={showNextLayer}>
     <text x="100" y="170" text-anchor="middle" font-size="16" font-family="Arial" fill="black">Click to show more!!
@@ -70,12 +64,38 @@
       />
       <text x="100" y="35" text-anchor="middle" font-size=10 font-family="Arial" fill="black">Super Idol</text>
     {/if}
-
   </svg>
-
-
-
 </main>
+
+<Scroller>
+  <div class="page">
+    <h1>The Journey of a Nobody to a Super Idol</h1>
+    <FlipCard />
+  </div>
+  
+  <div class="page">
+    <Hook />
+  </div>
+
+  <div class="page">
+    <Timeline />
+  </div>
+
+  <div class="page">
+    <TraineeDebutRate />
+  </div>
+</Scroller>
+
+<style>
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
 
 <style>
   main {
