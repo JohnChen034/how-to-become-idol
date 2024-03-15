@@ -29,7 +29,7 @@
     margin-bottom: 10px;
     font-size: 30px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 1000;
     text-align: left;
     color: #423C3C; /* dark Grey */;
   }

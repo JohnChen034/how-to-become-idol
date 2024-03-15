@@ -31,7 +31,7 @@
   <div class="foreground" slot="foreground">
 
     
-    <section>
+    <section style="background-color: #DDBBDF;">
       <div class="head_container">
         <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
         <FlipCard/>
@@ -39,10 +39,8 @@
     </section>
 
       
-    <section style="background-color: white;">
-      <div class="container" style="background-color: #DDBBDF">
-          <Hook />
-      </div>
+    <section style="background-color: #DDBBDF;">
+      <Hook />
     </section>
 
     
@@ -99,12 +97,6 @@
     background-color: white;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
-  }
-
-  .container {
-    border-radius: 50px 50px 50px 50px;
-    width: 1000px;
-    height: 500px;
   }
 
   h1 {
