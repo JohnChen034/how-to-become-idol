@@ -101,7 +101,6 @@
     /* color: white; */
     outline: magenta solid 3px;
     text-align: center;
-    max-width: 750px; /* adjust at will */
     color: black;
     padding: 1em;
     margin: 0 0 2em 0;
