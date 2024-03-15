@@ -102,8 +102,7 @@
   }
 
   .head_container {
-    height: 100vh;
-    display: flex;
+    height: 90vh;
     gap: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
