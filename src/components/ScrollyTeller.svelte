@@ -85,8 +85,8 @@
   }
 
   section {
-    height: 90vh;
-    width: 90vw;
+    height: 100vh;
+    width: 70vw;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
     text-align: center;
@@ -97,7 +97,7 @@
 
   .head_container {
     height: 90vh;
-    width: 80vw;
+    width: 60vw;
     gap: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
