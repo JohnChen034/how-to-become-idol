@@ -27,7 +27,7 @@
     animation: fadeIn 1s forwards;
     margin-bottom: 10px;
     font-size: 50px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     color: #2B2929; /* dark Grey */;
   }
