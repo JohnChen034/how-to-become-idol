@@ -33,7 +33,9 @@
     
     <section style="">
       <div class="head_container">
-        <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
+          The Journey of a Nobody to a Super Idol
+        </h1>
         <FlipCard/>
       </div>
     </section>
@@ -75,7 +77,7 @@
   }
 
   .foreground {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
     position: relative;
@@ -103,6 +105,7 @@
     background-color: white;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
+
   }
 
   .h1 {
