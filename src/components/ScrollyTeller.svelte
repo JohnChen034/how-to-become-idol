@@ -78,14 +78,13 @@
 
   .foreground {
     width: 80%;
-    margin: 0 auto;
     height: auto;
     position: relative;
     outline: red solid 3px;
   }
 
   section {
-    width: 95%;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
