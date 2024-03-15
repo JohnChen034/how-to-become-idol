@@ -26,7 +26,7 @@
     animation: fadeIn 1s forwards;
     margin-bottom: 10px;
     font-size: 50px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Archivo Black';
     text-align: left
   }
 
