@@ -96,14 +96,11 @@
 
   section {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
-    /* color: white; */
     outline: magenta solid 3px;
     text-align: center;
     color: black;
-    padding: 1em;
-    margin: 0 0 2em 0;
   }
 
   .head_container {
