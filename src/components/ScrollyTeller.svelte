@@ -30,7 +30,7 @@
   <div class="foreground" slot="foreground">
 
     
-    <section style="">
+    <section style="background-color:#b37eb5;">
       <div class="head_container">
         <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
           The Journey of a Nobody to a Super Idol
@@ -101,8 +101,7 @@
     width: 75vw;
     gap: 20px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    background-color: white;
+    background-color: #b37eb5;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
