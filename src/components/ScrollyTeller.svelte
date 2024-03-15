@@ -85,7 +85,7 @@
   }
 
   section {
-    width: 90%;
+    width: 95%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
@@ -96,6 +96,7 @@
   }
 
   .head_container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
