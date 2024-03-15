@@ -6,6 +6,7 @@
   import BeforeTrainee from "./beforeTrainee.svelte";
   import Hook from "./hook.svelte"
   import { onMount } from "svelte";
+  import Scroller from '@sveltejs/svelte-scroller';
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -15,24 +16,14 @@
 
 </script>
 
-<Scroller>
-  <div class="page">
-    <h1>The Journey of a Nobody to a Super Idol</h1>
-    <FlipCard />
-  </div>
-  
-  <div class="page">
-    <Hook />
-  </div>
-
-  <div class="page">
-    <Timeline />
-  </div>
-
-  <div class="page">
-    <TraineeDebutRate />
-  </div>
-</Scroller>
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
 <main>
   <div class="head_container">
