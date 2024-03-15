@@ -40,7 +40,7 @@
 
       
     <section style="background-color: white;">
-      <div class="container">
+      <div class="container" style="background-color: #DDBBDF">
           <Hook />
       </div>
     </section>
@@ -96,6 +96,11 @@
     background-color: white;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
+  }
+
+  .container {
+    width: 500
+    height: 200
   }
 
   h1 {
