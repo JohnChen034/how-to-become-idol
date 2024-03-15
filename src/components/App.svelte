@@ -15,24 +15,22 @@
 
 </script>
 
-<main style="scroll-snap-type: y mandatory; overflow-y: scroll;">
-  <div class="page head_container">
+<main>
+  <div class="head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
     <FlipCard/>
 
   </div>
 
-  <div class="page">
-    <Hook />
-  </div>
 
-  <div class="page">
-    <Timeline />
-  </div>
+  <Hook />
 
-  <div class="page">
-    <TraineeDebutRate />
-  </div>
+
+  <Timeline />
+
+
+  <TraineeDebutRate />
+
 
   <svg width="1000" height="1000" viewBox="20 0 160 200" xmlns="http://www.w3.org/2000/svg" on:click={showNextLayer}>
     <text x="100" y="170" text-anchor="middle" font-size="16" font-family="Arial" fill="black">Click to show more!!
@@ -126,16 +124,4 @@
   .layer:hover {
     fill-opacity: 0.7; /* Adjust opacity to make the layer look brighter on hover */
   }
-
-  .page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    scroll-snap-align: start;
-  }
-
 </style>
