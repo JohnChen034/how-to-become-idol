@@ -84,7 +84,7 @@
 
   section {
     height: 100vh;
-    width: 70vw;
+    width: 97%;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     outline: magenta solid 3px;
     text-align: center;
