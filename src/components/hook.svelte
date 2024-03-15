@@ -19,12 +19,14 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap')
+
   .sentence {
     opacity: 0;
     animation: fadeIn 1s forwards;
     margin-bottom: 10px;
     font-size: 50px;
-    font-family: Arial;
+    font-family: 'Archivo Black', sans-serif;
     text-align: left
   }
 
