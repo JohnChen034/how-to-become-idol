@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap')
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
   .sentence {
     opacity: 0;
