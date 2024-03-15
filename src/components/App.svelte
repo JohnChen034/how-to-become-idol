@@ -15,6 +15,25 @@
 
 </script>
 
+<Scroller>
+  <div class="page">
+    <h1>The Journey of a Nobody to a Super Idol</h1>
+    <FlipCard />
+  </div>
+  
+  <div class="page">
+    <Hook />
+  </div>
+
+  <div class="page">
+    <Timeline />
+  </div>
+
+  <div class="page">
+    <TraineeDebutRate />
+  </div>
+</Scroller>
+
 <main>
   <div class="head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
@@ -123,5 +142,14 @@
   /* Style for layer hover effect */
   .layer:hover {
     fill-opacity: 0.7; /* Adjust opacity to make the layer look brighter on hover */
+  }
+
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 </style>
