@@ -32,19 +32,17 @@
 
     
     <section style="">
-      <p2>
-        <div class="head_container">
-          <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
-            The Journey of a Nobody to a Super Idol
-          </h1>
-          <FlipCard/>
-        </div>
-      </p2>
+      <div class="head_container">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
+          The Journey of a Nobody to a Super Idol
+        </h1>
+        <FlipCard/>
+      </div>
     </section>
 
       
     <section style="">
-      <Hook />
+        <Hook />
     </section>
 
     
@@ -96,12 +94,6 @@
     margin: 0 0 2em 0;
   }
 
-  .p2 {
-    position: relative;
-    outline: blue solid 3px;
-    background-color: #DB307E;
-  }
-
   .head_container {
     height: 90vh;
     gap: 20px;
@@ -110,7 +102,6 @@
     background-color: white;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
-    position: absolute;
   }
 
   .h1 {
