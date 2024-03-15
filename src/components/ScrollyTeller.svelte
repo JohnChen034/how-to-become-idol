@@ -33,7 +33,6 @@
     
     <section style="background-color: #DDBBDF;">
         <h1>The Journey of a Nobody to a Super Idol</h1>
-        <FlipCard/ >
     </section>
 
       
