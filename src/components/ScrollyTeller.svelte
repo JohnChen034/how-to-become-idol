@@ -26,45 +26,35 @@
   bind:progress
 >
   <div class="background" slot="background">
-    <div class="progress-bars">
-      <p>current section: <strong>{index + 1}/{count}</strong></p>
-      <progress value={count ? (index + 1) / count : 0} />
-
-      <p>offset in current section</p>
-      <progress value={offset || 0} />
-
-      <p>total progress</p>
-      <progress value={progress || 0} />
-    </div>
   </div>
 
   <div class="foreground" slot="foreground">
 
+    /*This is section1*/
     <section>
-      This is the first section.
       <div class="head_container">
         <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
         <FlipCard/>
       </div>
     </section>
 
+    /*This is section2*/
     <section style="background-color: black;">
-      This is the second section.
       <Hook />
     </section>
 
+    /*This is section3*/
     <section>
-      This is the third section.
       <Timeline />
     </section>
 
+    /*This is section4*/
     <section>
-      This is the forth section.
       <TraineeDebutRate />
     </section>
 
+    /*This is section5*/
     <section>
-      This is the fifth section.
       <Pyramid />
     </section>
 
