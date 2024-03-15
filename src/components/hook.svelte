@@ -28,7 +28,7 @@
     font-size: 50px;
     font-family: 'Archivo Black';
     text-align: left;
-    color: white;
+    color: #2B2929; /* dark Grey */;
   }
 
   @keyframes fadeIn {
