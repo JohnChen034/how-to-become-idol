@@ -80,12 +80,6 @@
     outline: red solid 3px;
   }
 
-  .progress-bars {
-    position: absolute;
-    background: rgba(170, 51, 120, 0.2) /*  40% opaque */;
-    visibility: visible;
-  }
-
   section {
     width: 100%;
     height: 100vh;
