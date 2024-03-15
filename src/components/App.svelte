@@ -3,7 +3,6 @@
   import FlipCard from './FlipCard.svelte';
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import BeforeTrainee from "./beforeTrainee.svelte";
   import Hook from "./hook.svelte"
   import { onMount } from "svelte";
   import ScrollyTeller from './ScrollyTeller.svelte'
