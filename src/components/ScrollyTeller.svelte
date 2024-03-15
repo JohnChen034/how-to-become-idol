@@ -32,7 +32,7 @@
     
     <section style="background-color:#b37eb5;">
       <div class="head_container">
-        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px;">
           The Journey of a Nobody to a Super Idol
         </h1>
         <FlipCard/>
