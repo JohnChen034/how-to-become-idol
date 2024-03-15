@@ -36,8 +36,8 @@
           The Journey of a Nobody to a Super Idol
         </h1>
         <FlipCard/>
-        <p>Darren Liu</p>
-        <p>Jiayu Chen</p>
+        <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:100px;">Darren Liu</p>
+        <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:100px;">Jiayu Chen</p>
       </div>
     </section>
 
@@ -108,13 +108,5 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     flex-direction: column; /* Stack children vertically */
-  }
-
-  .h1 {
-    margin: 20px 0;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    font-size: 80;
-    color: black;
   }
 </style>
