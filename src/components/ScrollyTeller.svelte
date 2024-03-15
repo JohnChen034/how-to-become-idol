@@ -102,8 +102,9 @@
   }
 
   .container {
-    width: 500px;
-    height: 200px;
+    border-radius: 50px 50px 50px 50px;
+    width: 1000px;
+    height: 500px;
   }
 
   h1 {
