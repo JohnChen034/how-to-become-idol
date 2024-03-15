@@ -32,14 +32,12 @@
 
     
     <section style="background-color: #DDBBDF;">
-      <div class="head_container">
-        <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
-        <FlipCard/>
-      </div>
+        <h1>The Journey of a Nobody to a Super Idol</h1>
+        <FlipCard/ >
     </section>
 
       
-    <section style="background-color: #DDBBDF; align-items: center; justify-content:center;">
+    <section style="background-color: #DDBBDF;">
       <Hook />
     </section>
 
@@ -63,6 +61,10 @@
 
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
   .background {
     width: 100%;
     height: 100vh;
@@ -78,11 +80,14 @@
     outline: red solid 3px;
   }
 
-  section {
+  .section {
     width: 100%;
     height: 100vh;
     background-color: white;
     text-align: center;
+    align-items: center; 
+    justify-content:center;
+
     color: black;
     outline: magenta solid 3px;
   }
@@ -101,9 +106,9 @@
 
   h1 {
     margin: 20px 0;
-    font-family: cursive, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 80;
     color: black;
   }
 </style>
