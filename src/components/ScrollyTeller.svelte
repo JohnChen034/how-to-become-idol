@@ -75,7 +75,7 @@
     width: 70%;
     margin: 0;
     height: auto;
-    position: relative;
+    position: center;
   }
 
   section {
