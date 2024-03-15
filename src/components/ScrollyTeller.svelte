@@ -95,7 +95,7 @@
   }
 
   section {
-    width.
+    width;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
     /* color: white; */
