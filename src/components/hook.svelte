@@ -29,7 +29,7 @@
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    color: #2B2929; /* dark Grey */;
+    color: #423C3C; /* dark Grey */;
   }
 
   @keyframes fadeIn {
