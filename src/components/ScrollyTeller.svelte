@@ -34,10 +34,10 @@
     <section style="">
       <p2>
         <div class="head_container">
-        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
-          The Journey of a Nobody to a Super Idol
-        </h1>
-        <FlipCard/>
+          <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;">
+            The Journey of a Nobody to a Super Idol
+          </h1>
+          <FlipCard/>
         </div>
       </p2>
     </section>
@@ -99,6 +99,7 @@
   .p2 {
     position: relative;
     outline: blue solid 3px;
+    background-color: #DB307E;
   }
 
   .head_container {
