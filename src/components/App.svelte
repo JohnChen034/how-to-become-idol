@@ -87,17 +87,6 @@
 </Scroller>
 
 <style>
-  .page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-</style>
-
-<style>
   main {
     /*display: flex;*/
     flex-direction: column;
