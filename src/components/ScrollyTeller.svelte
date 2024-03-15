@@ -40,7 +40,9 @@
 
     /* This is section2 */;   
     <section style="background-color: white;">
-      <Hook />
+      <div class="head_container" >
+          <Hook />
+      </div>
     </section>
 
     /* This is section3 */;
@@ -101,6 +103,8 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     background-color: white;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
   }
 
   h1 {
