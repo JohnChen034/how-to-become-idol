@@ -31,8 +31,6 @@
 
   <Hook/>
 
-  <BeforeTrainee/>
-
   <Timeline/>
 
   <TraineeDebutRate></TraineeDebutRate>
