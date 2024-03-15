@@ -12,28 +12,27 @@
     layerVisible = (layerVisible + 1) % 5; // Cycle through 0-4
   }
 
-  let kpopTrendData;
-
-  onMount(async () => {
-    const response = await fetch('/static/kpopTrend.json');
-    kpopTrendData = await response.json();
-  });
-
 
 </script>
 
-<main>
-  <div class="head_container">
+<main style="scroll-snap-type: y mandatory; overflow-y: scroll;">
+  <div class="page head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
     <FlipCard/>
 
   </div>
 
-  <Hook/>
+  <div class="page">
+    <Hook />
+  </div>
 
-  <Timeline/>
+  <div class="page">
+    <Timeline />
+  </div>
 
-  <TraineeDebutRate></TraineeDebutRate>
+  <div class="page">
+    <TraineeDebutRate />
+  </div>
 
   <svg width="1000" height="1000" viewBox="20 0 160 200" xmlns="http://www.w3.org/2000/svg" on:click={showNextLayer}>
     <text x="100" y="170" text-anchor="middle" font-size="16" font-family="Arial" fill="black">Click to show more!!
@@ -126,6 +125,17 @@
   /* Style for layer hover effect */
   .layer:hover {
     fill-opacity: 0.7; /* Adjust opacity to make the layer look brighter on hover */
+  }
+
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    scroll-snap-align: start;
   }
 
 </style>
