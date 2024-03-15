@@ -39,7 +39,7 @@
     </section>
 
       
-    <section style="background-color: #DDBBDF; align-items: center;">
+    <section style="background-color: #DDBBDF; align-items: center; justify-content:center;">
       <Hook />
     </section>
 
