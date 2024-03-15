@@ -74,7 +74,7 @@
   .foreground {
     width: 100%;
     margin: 0;
-    height: 100vh;
+    height: 200vh;
     position: relative;
     outline: red solid 3px;
   }
