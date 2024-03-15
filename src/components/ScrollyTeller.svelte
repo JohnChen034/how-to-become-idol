@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    /* This is section2 */;
+    /* This is section2 */;   
     <section style="background-color: white;">
       <Hook />
     </section>
