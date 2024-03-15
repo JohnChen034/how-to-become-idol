@@ -44,6 +44,6 @@
 
 <div>
   {#each displaySentences as sentence, index (sentence)}
-    <div class="sentence" style="animation-delay: {index * 0.5}s">{sentence}</div>
+    <div class="sentence" style="animation-delay: {index * 0.2}s">{sentence}</div>
   {/each}
 </div>
