@@ -81,8 +81,8 @@
   }
 
   .foreground {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     height: auto;
     position: relative;
     outline: red solid 3px;
