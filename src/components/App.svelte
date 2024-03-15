@@ -16,15 +16,6 @@
 
 </script>
 
-.page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
 <main>
   <div class="head_container">
     <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
