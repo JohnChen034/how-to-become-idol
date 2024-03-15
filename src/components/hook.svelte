@@ -28,7 +28,7 @@
     animation: fadeIn 1s forwards;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     text-align: center;
