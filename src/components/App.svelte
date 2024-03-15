@@ -6,7 +6,8 @@
   import BeforeTrainee from "./beforeTrainee.svelte";
   import Hook from "./hook.svelte"
   import { onMount } from "svelte";
-  import Scroller from '@sveltejs/svelte-scroller';
+  import ScrollyTeller from './ScrollyTeller.svelte'
+
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -64,6 +65,8 @@
       <text x="100" y="35" text-anchor="middle" font-size=10 font-family="Arial" fill="black">Super Idol</text>
     {/if}
   </svg>
+
+  <ScrollyTeller />
 </main>
 
 <style>
@@ -113,14 +116,5 @@
   /* Style for layer hover effect */
   .layer:hover {
     fill-opacity: 0.7; /* Adjust opacity to make the layer look brighter on hover */
-  }
-
-  .page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 </style>
