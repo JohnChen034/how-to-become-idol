@@ -83,12 +83,11 @@
   }
 
   section {
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
-    /* color: white; */
     outline: magenta solid 3px;
     text-align: center;
-    max-width: 750px; /* adjust at will */
+    max-width: 750px;
     color: black;
     padding: 1em;
     margin: 0 0 2em 0;
