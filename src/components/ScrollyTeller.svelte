@@ -1,5 +1,6 @@
 <script>
   import Scroller from "@sveltejs/svelte-scroller";
+  import Hook from "./hook.svelte"
 
   let count, index, offset, progress;
 </script>
@@ -27,7 +28,10 @@
   </div>
 
   <div class="foreground" slot="foreground">
-    <section>This is the first section.</section>
+    <section>
+      This is the first section.
+      <Hook />
+    </section>
     <section>This is the second section.</section>
     <section>This is the third section.</section>
   </div>
