@@ -72,10 +72,10 @@
   }
 
   .foreground {
-    width: 70%;
+    width: 50%;
     margin: 0;
     height: auto;
-    position: center;
+    position: relative;
   }
 
   section {
