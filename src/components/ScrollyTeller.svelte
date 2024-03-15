@@ -30,7 +30,7 @@
 
   <div class="foreground" slot="foreground">
 
-    /* This is section1 */;
+    
     <section>
       <div class="head_container">
         <h1 style="font-size: 4rem;">The Journey of a Nobody to a Super Idol</h1>
@@ -38,24 +38,24 @@
       </div>
     </section>
 
-    /* This is section2 */;   
+      
     <section style="background-color: white;">
       <div class="head_container" >
           <Hook />
       </div>
     </section>
 
-    /* This is section3 */;
+    
     <section>
       <Timeline />
     </section>
 
-    /* This is section4 */;
+    
     <section>
       <TraineeDebutRate />
     </section>
 
-    /* This is section5 */;
+    
     <section>
       <Pyramid />
     </section>
@@ -77,14 +77,12 @@
     margin: 0;
     height: auto;
     position: relative;
-    outline: red solid 3px;
   }
 
   section {
     width: 100%;
     height: 100vh;
     background-color: white;
-    outline: magenta solid 3px;
     text-align: center;
     color: black;
   }
@@ -97,7 +95,7 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     background-color: white;
-    border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 50px 50px;
     overflow: hidden;
   }
 
