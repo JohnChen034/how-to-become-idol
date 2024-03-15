@@ -31,12 +31,12 @@
   <div class="foreground" slot="foreground">
 
     
-    <section style="background-color: #DDBBDF;">
+    <section style="">
         <h1>The Journey of a Nobody to a Super Idol</h1>
     </section>
 
       
-    <section style="background-color: #DDBBDF;">
+    <section style="">
       <Hook />
     </section>
 
@@ -71,20 +71,6 @@
     outline: green solid 3px;
   }
 
-  .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('bts.png'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2; /* 20% transparency */
-    z-index: -1; /* Ensures the pseudo-element is behind the content */
-  }
-
   .foreground {
     width: 100%;
     margin: 0;
@@ -95,10 +81,10 @@
 
   .section {
     width: 100%;
-    height: 100vh;
+    height: 20000px;
     background-color: white;
-    text-align: center;
-    align-items: center;
+    margin-left: 20%
+    margin-right: 20%
     outline: magenta solid 3px;
   }
 
