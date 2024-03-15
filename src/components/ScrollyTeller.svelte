@@ -83,8 +83,8 @@
     width: 100%;
     height: 20000px;
     background-color: white;
-    margin-left: 20%
-    margin-right: 20%
+    margin-left: 20%;
+    margin-right: 20%;
     outline: magenta solid 3px;
   }
 
