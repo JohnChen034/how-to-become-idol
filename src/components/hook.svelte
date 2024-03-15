@@ -25,6 +25,7 @@
     margin-bottom: 10px;
     font-size: 50px;
     font-family: Arial;
+    text-align: left
   }
 
   @keyframes fadeIn {
