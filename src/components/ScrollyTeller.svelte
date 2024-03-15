@@ -4,7 +4,6 @@
   import Hook from "./hook.svelte"
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import Pyramid from "./pyramid.svelte"
   import { onMount } from "svelte";
   import Scroller from "@sveltejs/svelte-scroller";
 
@@ -57,7 +56,6 @@
 
     
     <section>
-      <Pyramid />
     </section>
 
   </div>
@@ -93,6 +91,10 @@
     color: black;
     padding: 1em;
     margin: 0 0 2em 0;
+    display: flex; /* Use flexbox for positioning the child */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
   }
 
   .head_container {
