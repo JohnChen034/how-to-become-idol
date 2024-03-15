@@ -77,7 +77,7 @@
   .foreground {
     width: 100%;
     margin: 0;
-    height: 200vh;
+    height: auto;
     position: relative;
     outline: red solid 3px;
   }
@@ -86,8 +86,7 @@
     width: 100%;
     height: 200vh;
     background-color: #DDBBDF;
-    margin-left: 20%;
-    margin-right: 20%;
+    text-align: center;
     outline: magenta solid 3px;
   }
 
