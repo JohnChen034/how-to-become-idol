@@ -49,7 +49,7 @@
 
 
     <section style="background-color:#b37eb5;">
-      <BTSone >
+      <BTSone />
     </section>
 
 
