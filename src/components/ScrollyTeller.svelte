@@ -58,10 +58,6 @@
     </section>
 
     <section style="background-color:#b37eb5;>
-      <div class="container">
-        <BTStwo />
-      </div>
-      <img src="bts.png" alt="bts member" class="bts-member" />
     </section>
 
     
