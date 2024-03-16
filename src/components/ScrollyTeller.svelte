@@ -122,7 +122,7 @@
   }
 
   .container {
-    height: 80vh;
+    height: 110vh;
     width: 50vw;
     gap: 20px;
     padding-left:100px;
