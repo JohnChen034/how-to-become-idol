@@ -2,10 +2,12 @@
   import {fade} from 'svelte/transition';
   import FlipCard from './FlipCard.svelte';
   import Hook from "./hook.svelte"
+  import BTSone from "./BTSone.svelte"
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import { onMount } from "svelte";
   import Scroller from "@sveltejs/svelte-scroller";
+  
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -32,11 +34,11 @@
     
     <section style="background-color:#b37eb5;">
       <div class="head_container">
-        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:100px;">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:100px; color:#393537;">
           The Journey of a Nobody to a Super Idol
         </h1>
         <FlipCard/>
-        <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px;">Darren Liu, Jiayu Chen</p>
+        <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">Darren Liu, Jiayu Chen</p>
       </div>
     </section>
 
@@ -44,6 +46,16 @@
     <section style="background-color:#b37eb5;">
         <Hook />
     </section>
+
+
+    <section style="background-color:#b37eb5;">
+      <div class="head_container" 
+        style="background-color:#a27eac; height: 95vh; width: 50vw; background-color:#a27eac; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <BTSone />
+      </div>
+    </section>
+
+
 
     
     <section>
