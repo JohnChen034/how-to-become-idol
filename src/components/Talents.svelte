@@ -1,4 +1,5 @@
 <script>
+    export let index;
     let talents = [
         {
             name: 'Dance',
@@ -134,10 +135,27 @@
         font-family: 'IBM Plex Sans', sans-serif;
     }
 
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
+    .a {
+        opacity: 0;
+        animation: fadeInUp 0.5s ease-out forwards;
+        animation-delay: 0.5s;
+    }
 </style>
 
-<h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:35px; color:#393537;">
+{#if index > 5}
+    <div class="a">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:35px; color:#393537; ">
     In general, companies look at these aspects:
 </h1>
 
@@ -150,3 +168,8 @@
         </div>
     {/each}
 </div>
+
+    </div>
+
+
+{/if}

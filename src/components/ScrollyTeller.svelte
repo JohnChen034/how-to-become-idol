@@ -9,6 +9,7 @@
   import LoseWeight from "./loseWeight.svelte";
   import Talents from "./Talents.svelte";
   import Takeaway from "./takeaway.svelte"
+  import TransitionOne from "./TransitionOne.svelte";
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -71,9 +72,8 @@
 
 
     <section>
-      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
-        What aspects do the companies apply to filters applicants?
-      </h1>
+    <TransitionOne {index}/>
+
     </section>
 
 
@@ -83,6 +83,8 @@
 
 
     <section>
+
+
       <div style="display: flex;
         justify-content: center; /* Align horizontal center */
         align-items: center; /* Align vertical center */
