@@ -52,7 +52,7 @@
       <div class="container">
         <BTSone />
       </div>
-      <img src="bts.jpg" alt="bts member photo" />
+      <img src="bts.jpg" alt="bts member photo" class="bts-member"/>
     </section>
 
 
@@ -133,5 +133,12 @@
     flex-direction: column; /* Stack children vertically */
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
+  }
+
+  .bts-member {
+    padding-top: 10px;    /* Padding at the top */
+    padding-right: 15px;  /* Padding on the right */
+    padding-bottom: 5px;  /* Padding at the bottom */
+    padding-left: 20px;   /* Padding on the left */
   }
 </style>
