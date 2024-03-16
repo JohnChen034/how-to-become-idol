@@ -3,8 +3,8 @@
 
   let sentences = [
     "Our visualizations thoroughly demonstrate:",
-    "The practice time is so long, while the sleep time is very short"
-    "The debut rate is super low"
+    "The practice time is so long, while the sleep time is very short",
+    "The debut rate is super low",
     "Should be self-disciplined (weight countrol, facial expression)"
   ];
   let displaySentences = [];
