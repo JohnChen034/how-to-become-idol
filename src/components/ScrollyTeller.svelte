@@ -130,8 +130,19 @@
       </h1>
     </section>
 
-    <section>
-      <Takeaway />
+    <section style="justify-content: flex-start; flex-direction: row;">
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
+        Our visualizations thoroughly demonstrate:
+      </h1>
+      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+        • The practice time is so long, while the sleep time is very short
+      </p>
+      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+        • The debut rate is super low
+      </p>
+      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+        • Should be self-disciplined (weight countrol, facial expression)
+      </p>
     </section>
 
     <section>
@@ -139,16 +150,16 @@
         One Thing You Should Know
       </h1>
       <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
-        If you think becoming a super idol is easy, then your too naive! 
+        If you think becoming a super idol is easy, then your too naive!!!
       </p>
     </section>
 
     <section>
        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
-        Why WE Succeed Explaining
+        Why We Succeed Explaining
       </h1>
       <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
-        we not only show and explain everything a trainee has to do before debut, but also provide real example of people who experiencing the path becoming a super idol
+        We not only show and explain everything a trainee has to do before debut, but also provide real example of people who have experienced the path becoming a super idol
       </p>
     </section>
   </div>
