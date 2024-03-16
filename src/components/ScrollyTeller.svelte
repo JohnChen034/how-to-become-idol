@@ -57,7 +57,6 @@
     </section>
 
     <section style="background-color:#b37eb5;">
-      <BTStwo />
     </section>
 
     
