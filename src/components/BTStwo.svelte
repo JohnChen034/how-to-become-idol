@@ -19,8 +19,6 @@
 
 <style>
   .carousel-container {
-    width:100vw;
-    height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
