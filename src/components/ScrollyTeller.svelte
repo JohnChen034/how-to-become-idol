@@ -125,7 +125,7 @@
     height: 80vh;
     width: 75vw;
     gap: 20px;
-    background-color: #a27eac;
+    background-color: #b37eb5;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
