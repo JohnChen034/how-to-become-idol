@@ -27,7 +27,8 @@
   }
 
   img {
-    max-width: 100%;
+    width:75vw
+    height:80vh
     border-radius: 10px; /* Optional: for rounded corners */
   }
 
