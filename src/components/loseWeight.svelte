@@ -1,7 +1,7 @@
 <script>
     import FoodChoices from "./foodChoices.svelte";
     import FoodCaloriesIntake from "./FoodCaloriesIntake.svelte";
-
+export let index;
     const breakfastImageLinks = [
         'loseWeight/bfFood.png',
         // Add paths to all breakfast images
@@ -18,6 +18,22 @@
 </script>
 
 <style>
+        @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .a {
+        opacity: 0;
+        animation: fadeInUp 0.5s ease-out forwards;
+        animation-delay: 0.5s;
+    }
     .photo {
         position: relative;
         width: 20%;
@@ -45,6 +61,8 @@
     }
 </style>
 
+{#if index > 9}
+    <div class="a">
 <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
     To maintain their body, idols usually have to consume only 30%-60% of their bmi
 </p>
@@ -78,3 +96,8 @@
     <FoodCaloriesIntake></FoodCaloriesIntake>
 
 </div>
+
+</div>
+
+{/if}
+

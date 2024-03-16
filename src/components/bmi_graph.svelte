@@ -2,6 +2,7 @@
     import {onMount} from 'svelte';
     import * as d3 from 'd3';
 
+    export let index;
     let idolsData = [];
 
     onMount(async () => {
@@ -13,24 +14,20 @@
     });
 
     function processData(data) {
-        // Convert height from cm to meters and calculate BMI
         data.forEach(d => {
             d.Height = +d.Height;
             d.Weight = +d.Weight;
             d.BMI = d.Weight / (d.Height / 100) ** 2;
         });
 
-        // Define BMI categories
         const bmiCategories = ['Underweight', 'Normal', 'Overweight', 'Obese'];
         const bmiCategoryRanges = [0, 18.5, 25, 30, Infinity];
 
-        // Assign BMI categories
         data.forEach(d => {
             const bmiIndex = bmiCategoryRanges.findIndex((value, index, array) => d.BMI < array[index + 1]);
             d.BMICategory = bmiCategories[bmiIndex - 1];
         });
 
-        // Split data by gender
         const male = data.filter(d => d.Gender === 'M');
         const female = data.filter(d => d.Gender === 'F');
 
@@ -68,8 +65,8 @@
 
 
         const bmiColorScale = d3.scaleLinear()
-            .domain([0, 18.5, 25, 30, 35]) // Example BMI values for domain
-            .range(['grey', 'blue', 'green', 'orange', 'red']) // Corresponding colors
+            .domain([0, 18.5, 25, 30, 35])
+            .range(['grey', 'blue', 'green', 'orange', 'red'])
             .interpolate(d3.interpolateRgb);
 
         const g = svg.append('g')
@@ -141,8 +138,10 @@
 
 </script>
 
+{#if index > 7}
 
-<div class="content-container">
+    <div class="a">
+        <div class="content-container">
     <div class="text-container">
         <p class="intro-text">below is an analysis on the BMI from the current debutted idols body data</p>
 
@@ -157,9 +156,31 @@
     </div>
 </div>
 
+    </div>
+
+{/if}
+
+
+
 
 
 <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .a {
+        opacity: 0;
+        animation: fadeInUp 0.5s ease-out forwards;
+        animation-delay: 0.5s;
+    }
     body {
         background-color: #5e4b8b; /* Set the background to purple */
         color: #fff; /* Set the text color to white for contrast */

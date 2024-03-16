@@ -8,8 +8,9 @@
   import Bmi_graph from "./bmi_graph.svelte";
   import LoseWeight from "./loseWeight.svelte";
   import Talents from "./Talents.svelte";
-  import Takeaway from "./takeaway.svelte"
   import TransitionOne from "./TransitionOne.svelte";
+  import TransitionTwo from "./TransitionTwo.svelte";
+  import Transition3 from "./Transition3.svelte";
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -85,14 +86,7 @@
     <section>
 
 
-      <div style="display: flex;
-        justify-content: center; /* Align horizontal center */
-        align-items: center; /* Align vertical center */
-        text-align: center;">
-        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
-          How skinny idols are expected to be?
-        </h1>
-      </div>
+      <TransitionTwo {index}></TransitionTwo>
     </section>
 
 
@@ -102,15 +96,7 @@
 
 
     <section>
-      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
-        Faces under Camera
-      </h1>
-      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:25px; color:#393537; width: 90%">
-        Taking pictures with a lens will naturally widen the portrait, but now most LCD TV screens have a display ratio
-        of 16:9, which will further widen the portrait. It can be said that I am very picky. Below is a classic
-        experimental picture illustrating the faces under different films.
-      </p>
-      <img src="faceOnCamera.png" alt="" style="width: 500px; height: 500px">
+<Transition3 {index}/>
     </section>
 
 
