@@ -50,7 +50,7 @@
   button::before {
     content: '';
     display: inline-block;
-    border: #222329;
+    border: solid black;
     border-width: 0 3px 3px 0; /* Controls the thickness of the arrow */
     padding: 10px; /* Arrow size */
     transform: translate(-50%, -50%) rotate(270deg); /* Adjust these values to change the arrow's angle */
