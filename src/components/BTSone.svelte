@@ -3,8 +3,8 @@
 
   let sentences = [
     "BTS is one of the most successful boy bands in South Korea, ",
-    "with a global fan base and sold-out concerts wherever they go.",
-    "You know what",
+    "with a huge global fan base and many authoritative awards",
+    "However,",
     "Behind their tremendous success, there lies an unseen side of hardships."
   ];
   let displaySentences = [];
