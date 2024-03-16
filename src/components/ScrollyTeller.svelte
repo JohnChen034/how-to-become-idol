@@ -3,6 +3,8 @@
   import FlipCard from './FlipCard.svelte';
   import Hook from "./hook.svelte"
   import BTSone from "./BTSone.svelte"
+  import BTStwo from "./BTStwo.svelte"
+  import BTSthree from "./BTSthree.svelte"
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import { onMount } from "svelte";
@@ -55,11 +57,11 @@
       <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
 
-
-
-    
-    <section>
-      <Timeline />
+    <section style="background-color:#b37eb5;>
+      <div class="container">
+        <BTStwo />
+      </div>
+      <img src="bts.png" alt="bts member" class="bts-member" />
     </section>
 
     
