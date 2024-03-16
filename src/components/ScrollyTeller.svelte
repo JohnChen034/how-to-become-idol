@@ -52,7 +52,7 @@
       <div class="container">
         <BTSone />
       </div>
-      <img src="bts.jpg" alt="bts member photo" class="bts-member"/>
+      <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
 
 
