@@ -39,9 +39,9 @@
         gap: 20px;
         background-color: #b37eb5;
         display: flex; /* Use flexbox for positioning the child */
-        justify-content: center; /* Center horizontally */
+        justify-content: flex-start; /* Center horizontally */
         align-items: flex-start; /* Center vertically */
-        flex-direction: column; /* Stack children vertically */
+        flex-direction: row; /* Stack children vertically */
     }
 </style>
 
