@@ -122,10 +122,9 @@
   }
 
   .container {
-    height: 110vh;
-    width: 50vw;
+    height: 80vh;
+    width: 75vw;
     gap: 20px;
-    padding-left:100px;
     background-color: #a27eac;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
