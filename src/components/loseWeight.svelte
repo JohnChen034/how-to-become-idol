@@ -28,10 +28,10 @@
         position: absolute;
         content: "";
         top: 0%;
-        left: 50px;
+        left: 200px;
         height: 510px;
         width: 210px;
-        box-shadow: inset 50px 50px 50px 0px lightgoldenrodyellow, inset -50px -50px 50px 0px lightgoldenrodyellow;
+        box-shadow: inset 50px 50px 50px 0px #b37eb5, inset -50px -50px 50px 0px #b37eb5;
     }
 </style>
 
@@ -40,10 +40,10 @@
 </p>
 
 <div style="display: flex; flex-direction: row;">
-    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:35px; color:#393537;">
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:25px; color:#393537; width: 60%">
         The left images illustrate a day of food choices from Suzy Bae Sue Ji for 5 months. The total calories for her meals is only 1300!
     </p>
-    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:35px; color:#393537;">
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:25px; color:#393537; width: 30%">
         The right one shows how much food 1300 calories equal to
     </p>
 </div>
@@ -54,12 +54,13 @@
     <div class="photo">
         <div
                 id="img"
-                alt="此处放置图片" style="margin-left: 50px;">
-            <img src="loseWeight/suzy.png" style="width: 200px; height: 500px; display: flex" alt="">
+                alt="此处放置图片">
+            <img src="loseWeight/suzy.png" style="margin-left: 200px; width: 200px; height: 500px; display: flex"
+                 alt="">
         </div>
 
     </div>
-    <div style="display: flex;     flex-direction: column;">
+    <div style="display: flex;     flex-direction: column; margin-left: 200px; ">
         <FoodChoices imgLinks={breakfastImageLinks} mealName="breakfast"></FoodChoices>
         <FoodChoices imgLinks={lunchImageLinks} mealName="lunch"></FoodChoices>
         <FoodChoices imgLinks={dinnerImageLinks} mealName="dinner"></FoodChoices>

@@ -44,13 +44,13 @@
 
       
     <section style="background-color:#b37eb5;">
-        <Hook />
+        <Hook {index}/>
     </section>
 
 
     <section style="background-color:#b37eb5; justify-content: flex-start; flex-direction: row;">
       <div class="container">
-        <BTSone />
+        <BTSone {index}/>
       </div>
       <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
@@ -60,12 +60,12 @@
       <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
         Let's See How Tough BTS Suffered Before Debut!!!
       </h1>
-      <BTStwo />
+      <BTStwo {index}/>
     </section>
 
     
     <section>
-      <TraineeDebutRate />
+      <TraineeDebutRate  {index}/>
     </section>
 
 
@@ -77,7 +77,7 @@
 
 
     <section>
-      <Talents></Talents>
+      <Talents {index}></Talents>
     </section>
 
 
@@ -94,15 +94,15 @@
 
 
     <section>
-      <Bmi_graph></Bmi_graph>
+      <Bmi_graph {index}></Bmi_graph>
     </section>
 
 
     <section>
-      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
         Faces under Camera
       </h1>
-      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:25px; color:#393537; width: 90%">
         Taking pictures with a lens will naturally widen the portrait, but now most LCD TV screens have a display ratio
         of 16:9, which will further widen the portrait. It can be said that I am very picky. Below is a classic
         experimental picture illustrating the faces under different films.
@@ -112,7 +112,7 @@
 
 
     <section>
-      <LoseWeight></LoseWeight>
+      <LoseWeight  {index}></LoseWeight>
     </section>
   </div>
 </Scroller>
@@ -123,30 +123,31 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+  :global(body) {
+    margin: 0;
+  }
   .background {
     width: 100%;
     height: 100vh;
     position: relative;
-    outline: green solid 3px;
+    /*outline: green solid 3px;*/
   }
 
 
   .foreground {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     position: relative;
-    outline: red solid 3px;
   }
 
   section {
     height: 100vh;
     width: 100%;
     background-color: #b37eb5;
-    outline: magenta solid 3px;
     text-align: center;
     color: black;
-    margin: 0 0 2em 0;
+    margin: 0 0 0 0;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */

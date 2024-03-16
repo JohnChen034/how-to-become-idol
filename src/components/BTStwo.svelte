@@ -7,7 +7,7 @@
     'slide5.png'
   ];
   let currentImageIndex = 0;
-
+export let index;
   function showNext() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
   }
@@ -70,10 +70,19 @@
     right: 10px;
     transform: translateY(-50%) rotate(45deg);
   }
+    @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 </style>
+
+<!--{#if index > 3}-->
 
 <div class="carousel-container">
   <button on:click={showPrevious}></button>
   <img src={images[currentImageIndex]} alt="Carousel Image">
   <button on:click={showNext}></button>
 </div>
+
+<!--{/if}-->

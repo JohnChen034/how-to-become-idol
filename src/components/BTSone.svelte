@@ -1,6 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
+  import {onMount} from 'svelte';
 
+  export let index;
   let sentences = [
     "BTS is one of the most successful boy bands in South Korea, ",
     "with a huge global fan base and many authoritative awards",
@@ -28,7 +29,7 @@
     animation: fadeIn 1s forwards;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -43,7 +44,10 @@
 </style>
 
 <div>
+
+  {#if index > 1}
   {#each displaySentences as sentence, index (sentence)}
     <div class="sentence" style="animation-delay: {index * 0.2}s">{sentence}</div>
   {/each}
+  {/if}
 </div>

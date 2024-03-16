@@ -1,6 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
+  import {onMount} from 'svelte';
 
+  export let index;
   let sentences = [
     "Have you ever think of becoming a K-pop idol?",
     "If yes,",
@@ -43,7 +44,10 @@
 </style>
 
 <div>
+  {#if index > 0}
   {#each displaySentences as sentence, index (sentence)}
     <div class="sentence" style="animation-delay: {index * 0.2}s">{sentence}</div>
   {/each}
+
+  {/if}
 </div>

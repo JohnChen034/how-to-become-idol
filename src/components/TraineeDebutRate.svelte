@@ -6,6 +6,7 @@
     const spacing = 15; // Space between dots
     let userCount = 6848; // Default number of dots or user's input
 
+    export let index;
     // Function to generate dots
     function generateDots() {
         let tempDots = [];
@@ -64,7 +65,8 @@
 
 </script>
 
-<div class="container">
+{#if index > 3}
+    <div class="container">
     <div class="container2">
         <h1>How much chance do you think you can successfully debut?</h1>
     <h2>Answer: 2% x (1-5%)^t x 5%; "t" represents training period in years</h2>
@@ -101,9 +103,21 @@
         {/each}
     </svg>
 </div>
+{/if}
+
 
 
 <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     body {
         font-family: "Arial", sans-serif;
         background-color: #f9f9f9;
@@ -113,6 +127,7 @@
     }
 
     .container {
+        opacity: 0;
         display: flex;
         flex-direction: row;
         height: 90%;
@@ -122,6 +137,8 @@
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 0.5s ease-out forwards;
+        animation-delay: 0.5s;
     }
     .container2 {
         display: flex;
@@ -130,7 +147,7 @@
 
     h1,
     h2 {
-        color: #007bff;
+        color: #5e4b8b;
         text-align: center;
     }
 
@@ -139,7 +156,7 @@
     }
 
     button {
-        background-color: #007bff;
+        background-color: #5e4b8b;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -149,6 +166,6 @@
     }
 
     button:hover {
-        background-color: #0056b3;
+        background-color: purple;
     }
 </style>

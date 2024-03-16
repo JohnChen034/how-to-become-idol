@@ -17,6 +17,29 @@
             info: "In a world where visuals can be as impactful as talent, K-pop companies often hold auditions that resemble a search for the face that could launch a thousand ships. The competition is fierce, as they seek someone with an exceptional look that can charm fans and create a memorable stage presence. An aspirant once turned heads not just for her striking features but for the poise and confidence she exuded, transforming the stage into her realm the moment she stepped on it. Her distinctive look and aura made her the talk of the town, proving that a powerful visual appeal can indeed eclipse the brightest of stars."
         }
     ];
+        function positionTooltip(event) {
+        const tooltip = event.currentTarget.querySelector('.tooltip');
+        const tooltipRect = tooltip.getBoundingClientRect();
+        const talentRect = event.currentTarget.getBoundingClientRect();
+
+        // Check if tooltip overflows the window on the right
+        if (tooltipRect.right > window.innerWidth) {
+            tooltip.style.left = 'auto';
+            tooltip.style.right = '110%';
+        } else {
+            tooltip.style.left = '110%';
+            tooltip.style.right = 'auto';
+        }
+
+        // Check if tooltip overflows the window at the top
+        if (tooltipRect.top < 0) {
+            tooltip.style.top = '0';
+            tooltip.style.transform = 'translateY(0)';
+        } else {
+            tooltip.style.top = '50%';
+            tooltip.style.transform = 'translateY(-50%)';
+        }
+    }
 </script>
 
 <style>
@@ -31,7 +54,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 300px; /* Increased image size */
+        width: 50%; /* Increased image size */
         cursor: pointer;
     }
 
@@ -114,14 +137,13 @@
 
 </style>
 
-<h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+<h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; font-size:35px; color:#393537;">
     In general, companies look at these aspects:
 </h1>
 
-
 <div class="talents-container">
     {#each talents as talent (talent.name)}
-        <div class="talent">
+        <div class="talent" on:mouseover={positionTooltip}>
             <div class="title">{talent.name}</div>
             <img src={talent.img} alt={talent.name}/>
             <div class="tooltip">{talent.info}</div>

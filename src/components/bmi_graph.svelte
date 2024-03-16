@@ -10,8 +10,6 @@
         renderChart(idolsData.male, 'male');
         renderChart(idolsData.female, 'female');
 
-        barCreate(idolsData, 'male')
-        barCreate(idolsData, 'female')
     });
 
     function processData(data) {
@@ -45,6 +43,11 @@
         const width = +svg.attr('width') - margin.left - margin.right;
         const height = +svg.attr('height') - margin.top - margin.bottom;
 
+
+        let filteredData = data.filter(d => {
+            return isFinite(d.BMI) && d.Height !== 0 && d.Weight !== 0;
+        });
+
         // Set specific domain ranges for male and female
         let xDomain, yDomain;
         if (gender === 'male') {
@@ -65,10 +68,10 @@
 
 
         const bmiColorScale = d3.scaleLinear()
-            .domain([0, 18.5, 25, 30, Infinity]) // Example BMI values for domain
+            .domain([0, 18.5, 25, 30, 35]) // Example BMI values for domain
             .range(['grey', 'blue', 'green', 'orange', 'red']) // Corresponding colors
-
             .interpolate(d3.interpolateRgb);
+
         const g = svg.append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -80,7 +83,7 @@
             .call(d3.axisLeft(y));
 
         g.selectAll('.dot')
-            .data(data)
+            .data(filteredData)
             .enter().append('circle')
             .attr('class', 'dot')
             .attr('r', 2)
@@ -112,52 +115,113 @@
                 .attr('stop-color', color);
         });
 
+    const legend = svg.selectAll(".legend")
+        .data(bmiColorScale.domain())
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    // Draw legend colored rectangles
+    legend.append("rect")
+        .attr("x", width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", bmiColorScale);
+
+    // Draw legend text
+    legend.append("text")
+        .attr("x", width +5)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "start")
+        .text(function(d) { return '< ' + d; });
 
     }
 
-    function barCreate(data, gender) {
-        const svg = d3.select(`#scatter-plot-${gender}`);
-        const margin = {top: 20, right: 20, bottom: 30, left: 40};
-        const width = +svg.attr('width') - margin.left - margin.right;
-        const height = +svg.attr('height') - margin.top - margin.bottom;
-        // Add color bar rectangle
-        const barHeight = 200;
 
-        const defs = svg.append('defs');
-
-
-        const bmiColorScale = d3.scaleLinear()
-            .domain([0, 18.5, 25, 30, Infinity]) // Example BMI values for domain
-            .range(['grey', 'blue', 'green', 'orange', 'red']) // Corresponding colors
-
-        // Add an axis to show the color scale
-        const colorAxisScale = d3.scaleLinear()
-            .domain(bmiColorScale.domain())
-            .range([margin.left, margin.left + width]);
-
-        const colorAxis = d3.axisBottom(colorAxisScale)
-            .tickSize(barHeight * 1.5)
-            .tickFormat(d3.format('.1f'))
-            .tickValues(bmiColorScale.domain());
-
-        svg.append('g')
-            .attr('class', 'color-axis')
-            .attr('transform', `translate(0, ${height + margin.top + 10})`)
-            .call(colorAxis)
-            .select('.domain').remove(); // Remove the axis line
-
-
-    }
 </script>
 
-<p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;"> 
-    As u see in the graphs, the range of bmi are mostly underweight for male and especially female idols
-</p>
-<svg id="scatter-plot-male" width="500" height="400"></svg>
-<svg id="scatter-plot-female" width="500" height="400"></svg>
+
+<div class="content-container">
+    <div class="text-container">
+        <p class="intro-text">below is an analysis on the BMI from the current debutted idols body data</p>
+
+        <p></p>
+        <img src="bmi_chart.png" alt="BMI Chart" class="bmi-chart-image">
+        <p class="additional-info">'As you see in the graphs, the range of BMI is mostly underweight for male and especially female idols'</p>
+
+    </div>
+    <div class="charts-container">
+        <svg id="scatter-plot-male" width="500" height="400"></svg>
+        <svg id="scatter-plot-female" width="500" height="400"></svg>
+    </div>
+</div>
+
 
 
 <style>
+    body {
+        background-color: #5e4b8b; /* Set the background to purple */
+        color: #fff; /* Set the text color to white for contrast */
+        font-family: "Arial", sans-serif;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px; /* Adjust as needed */
+        margin: 0 auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .intro-text {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .additional-info {
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .bmi-chart-image {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #fff; /* A white border around the image for contrast */
+        border-radius: 4px; /* Slight rounding of corners */
+        padding: 4px; /* Spacing around the image */
+        margin: 20px 0; /* Space above and below the image */
+    }
+
+    .charts-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px; /* Adjust the gap between the SVGs */
+    }
+
+    .legend {
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        fill: #fff; /* Set legend text to white */
+    }
+
+    .legend rect {
+        stroke: #fff;
+        stroke-width: 1px; /* A thinner stroke for the legend boxes */
+    }
+
+    svg {
+        border: 1px solid #fff; /* A white border for contrast */
+        border-radius: 4px;
+        background-color: #f0e6f6; /* A lighter purple background for the SVG */
+        overflow: visible;
+    }
     .dot {
         stroke: #000;
     }
@@ -165,8 +229,10 @@
     svg {
         margin-left: 50px;
         /*margin-top: 20px;*/
-        font-family: 'IBM Plex Sans', sans-serif; 
-        font-weight: 600; font-size:10px; 
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 600; font-size:10px;
         color:#393537;
+        overflow: visible; /* This allows the svg contents to not be clipped, adjust as needed */
+
     }
 </style>
