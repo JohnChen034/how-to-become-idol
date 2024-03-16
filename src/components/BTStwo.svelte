@@ -1,49 +1,45 @@
 <script>
-  import { onMount } from 'svelte';
-
-  let sentences = [
-    "BTS is one of the most successful boy bands in South Korea, ",
-    "with a huge global fan base and many authoritative awards",
-    "However,",
-    "Behind their tremendous success, there lies an unseen side of hardships."
+  let images = [
+    'difficulty1.PNG',
+    'difficulty2.PNG',
+    'difficulty3.PNG',
+    'difficulty4.PNG',
+    'difficulty5.PNG'
   ];
-  let displaySentences = [];
+  let currentImageIndex = 0;
 
-  onMount(() => {
-    sentences.forEach((sentence, index) => {
-      setTimeout(() => {
-        displaySentences = [...displaySentences, sentence];
-      }, 2000 * index); // Adjust the delay as needed for sentences
-    });
-  });
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }
+
+  function previousImage() {
+    currentImageIndex =
+      (currentImageIndex - 1 + images.length) % images.length;
+  }
 </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+<div class="image-slider">
+  <button on:click={previousImage}>&lt;</button>
+  <img src={images[currentImageIndex]} alt="Sliding Image" />
+  <button on:click={nextImage}>&gt;</button>
+</div>
 
-  .sentence {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    color:#393537;; /* dark Grey */;
+<style>
+  .image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
   }
 
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+  .image-slider img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    /* Add styles for transitions if needed */
+  }
+
+  button {
+    /* Add button styling here */
   }
 </style>
-
-<div>
-  {#each displaySentences as sentence, index (sentence)}
-    <div class="sentence" style="animation-delay: {index * 0.2}s">{sentence}</div>
-  {/each}
-</div>
