@@ -49,10 +49,7 @@
 
 
     <section style="background-color:#b37eb5;">
-      <div class="head_container" 
-        style="background-color:#a27eac; height: 95vh; width: 50vw; background-color:#a27eac; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <BTSone />
-      </div>
+      <BTSone />
     </section>
 
 
