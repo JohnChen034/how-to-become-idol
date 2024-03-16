@@ -1,10 +1,10 @@
 <script>
   let images = [
-    'bts_slide1.png',
-    'bts_slide2.png',
-    'bts_slide3.png',
-    'bts_slide4.png',
-    'bts_slide5.png'
+    'slide1.png',
+    'slide2.png',
+    'slide3.png',
+    'slide4.png',
+    'slide5.png'
   ];
   let currentImageIndex = 0;
 
@@ -28,8 +28,8 @@
   }
 
   img {
-    width:75vw;
-    height:80vh;
+    width:65vw;
+    height:70vh;
     border-radius: 10px; /* Optional: for rounded corners */
   }
 
