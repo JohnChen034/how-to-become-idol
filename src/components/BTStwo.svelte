@@ -1,6 +1,10 @@
 <script>
   let images = [
-    'bts.png'
+    'bts_slide1.png',
+    'bts_slide2.png',
+    'bts_slide3.png',
+    'bts_slide4.png',
+    'bts_slide5.png'
   ];
   let currentImageIndex = 0;
 
