@@ -18,7 +18,6 @@
 </script>
 
 <style>
-
     .photo {
         position: relative;
         width: 20%;
@@ -33,9 +32,20 @@
         width: 210px;
         box-shadow: inset 50px 50px 50px 0px #b37eb5, inset -50px -50px 50px 0px #b37eb5;
     }
+    .suzy_container
+    .weight_calc_container {
+        height: 80vh;
+        width: 50vw;
+        gap: 20px;
+        background-color: #b37eb5;
+        display: flex; /* Use flexbox for positioning the child */
+        justify-content: flex-start; /* Center horizontally */
+        align-items: flex-start; /* Center vertically */
+        flex-direction: row; /* Stack children vertically */
+    }
 </style>
 
-<p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+<p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
     To maintain their body, idols usually have to consume only 30%-60% of their bmi
 </p>
 
