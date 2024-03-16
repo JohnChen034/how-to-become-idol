@@ -144,11 +144,10 @@
         <div class="content-container">
     <div class="text-container">
         <p class="intro-text">below is an analysis on the BMI from the current debutted idols body data</p>
-
         <p></p>
         <img src="bmi_chart.png" alt="BMI Chart" class="bmi-chart-image">
         <p class="additional-info">'As you see in the graphs, the range of BMI is mostly underweight for male and especially female idols'</p>
-
+        <p> note: in some devices it does not load data when fadein twice, so simply refresh the page the see the graph again</p>
     </div>
     <div class="charts-container">
         <svg id="scatter-plot-male" width="500" height="400"></svg>
@@ -177,6 +176,10 @@
     }
 
     .a {
+                font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #393537;
         opacity: 0;
         animation: fadeInUp 0.5s ease-out forwards;
         animation-delay: 0.5s;
@@ -198,6 +201,8 @@
     }
 
     .text-container {
+        font-size: 20px;
+
         text-align: center;
     }
 
