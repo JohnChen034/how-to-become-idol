@@ -49,7 +49,9 @@
 
 
     <section style="background-color:#b37eb5;">
-      <BTSone />
+      <div class="container">
+        <BTSone />
+      <div/>
     </section>
 
 
@@ -112,6 +114,18 @@
     gap: 20px;
     padding: 20px;
     background-color: #b37eb5;
+    display: flex; /* Use flexbox for positioning the child */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+  }
+
+  .container {
+    height: 95vh;
+    width: 50vw;
+    gap: 20px;
+    padding: 20px;
+    background-color: #a27eac;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
