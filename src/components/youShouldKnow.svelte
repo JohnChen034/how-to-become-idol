@@ -31,3 +31,4 @@
         If you think becoming a super idol is easy, then your too naive!!!
       </p>
 </div>
+{/if}

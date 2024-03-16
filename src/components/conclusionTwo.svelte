@@ -28,3 +28,4 @@
         The path from a nobody to a super idol is extremely tough and difficult!!!
       </h1>
 </div>
+{/if}
