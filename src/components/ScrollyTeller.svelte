@@ -125,7 +125,7 @@
     height: 80vh;
     width: 50vw;
     gap: 20px;
-    padding-left:50px;
+    padding-left:60px;
     background-color: #a27eac;
     display: flex; /* Use flexbox for positioning the child */
     justify-content: center; /* Center horizontally */
@@ -140,6 +140,6 @@
     padding-right: 15px;  /* Padding on the right */
     padding-bottom: 5px;  /* Padding at the bottom */
     padding-left: 50px;   /* Padding on the left */
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 50px 50x 20px 20px;
   }
 </style>
