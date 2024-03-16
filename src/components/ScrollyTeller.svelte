@@ -4,7 +4,6 @@
   import Hook from "./hook.svelte"
   import BTSone from "./BTSone.svelte"
   import BTStwo from "./BTStwo.svelte"
-  import BTSthree from "./BTSthree.svelte"
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import { onMount } from "svelte";
@@ -58,6 +57,7 @@
     </section>
 
     <section style="background-color:#b37eb5;>
+      <BTStwo />
     </section>
 
     
