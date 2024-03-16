@@ -28,8 +28,8 @@
   }
 
   img {
-    width:65vw;
-    height:70vh;
+    width:60vw;
+    height:65vh;
     border-radius: 10px; /* Optional: for rounded corners */
   }
 

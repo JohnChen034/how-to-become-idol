@@ -57,6 +57,9 @@
     </section>
 
     <section style="background-color:#b37eb5;">
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+        See How Tough BTS Suffered Before Debut
+      </h1>
       <BTStwo />
     </section>
 
