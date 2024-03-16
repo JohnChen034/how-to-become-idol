@@ -3,8 +3,8 @@
     const center = {x: 750, y: 750}; // Center of the circle
     const maxRadius = 700; // Maximum radius of the filled circle
     const dotRadius = 4; // Radius of each dot
-    const spacing = 12.5; // Space between dots
-    let userCount = 10000; // Default number of dots or user's input
+    const spacing = 15; // Space between dots
+    let userCount = 6848; // Default number of dots or user's input
 
     // Function to generate dots
     function generateDots() {
@@ -65,7 +65,8 @@
 </script>
 
 <div class="container">
-    <h1>How much chance do you think you can successfully debut?</h1>
+    <div class="container2">
+        <h1>How much chance do you think you can successfully debut?</h1>
     <h2>Answer: 2% x (1-5%)^t x 5%; "t" represents training period in years</h2>
 
 
@@ -76,10 +77,7 @@
     </p>
     <input type="number" id="dotCountInput" value="10000">
 
-    <br>
-    <br>
-    <br>
-    <button id="generateButton" on:click={handleUserInput}>Generate (9761 max)</button>
+        <button id="generateButton" on:click={handleUserInput}>Generate (6848 max)</button>
 
     <p id="resultInputText"></p>
 
@@ -91,11 +89,15 @@
     <button id="debutButton" on:click={removeDebutDots} disabled>Trainees that debut this year</button>
 
     <p id="resultDebutText"></p>
+    </div>
+
+
+
 
     <!-- Your SVG stays the same -->
     <svg id="svgContainer" width="100%" height="800" viewBox="0 0 1500 1500">
         {#each dots as {x, y}}
-            <circle cx={x} cy={y} r={dotRadius} fill="black"/>
+            <circle cx={x} cy={y} r={dotRadius} fill="none" stroke="purple" stroke-width="2"/>
         {/each}
     </svg>
 </div>
@@ -111,12 +113,19 @@
     }
 
     .container {
-        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        width: 90%;
         margin: 50px auto;
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
     }
 
     h1,

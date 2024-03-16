@@ -1,14 +1,14 @@
 <script>
-  import {fade} from 'svelte/transition';
   import FlipCard from './FlipCard.svelte';
   import Hook from "./hook.svelte"
   import BTSone from "./BTSone.svelte"
   import BTStwo from "./BTStwo.svelte"
   import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
-  import { onMount } from "svelte";
   import Scroller from "@sveltejs/svelte-scroller";
-  
+  import Bmi_graph from "./bmi_graph.svelte";
+  import LoseWeight from "./loseWeight.svelte";
+  import Talents from "./Talents.svelte";
 
   let layerVisible = 0;
   function showNextLayer() {
@@ -59,6 +59,55 @@
     <section style="background-color:#b37eb5;">
       <BTStwo />
     </section>
+
+    
+    <section>
+      <TraineeDebutRate />
+    </section>
+
+
+    <section>
+
+      <h1>What aspects do the companies apply to filters applicants?</h1>
+
+    </section>
+    <section>
+
+      <Talents></Talents>
+
+    </section>
+
+    <section>
+      <div style="    display: flex;
+    justify-content: center; /* Align horizontal center */
+    align-items: center; /* Align vertical center */
+    text-align: center;">
+        <h1>How skinny idols are expected to be?</h1>
+
+
+      </div>
+    </section>
+
+
+    <section>
+
+      <Bmi_graph></Bmi_graph>
+    </section>
+
+    <section>
+      <h1>Faces under Camera</h1>
+      <p>Taking pictures with a lens will naturally widen the portrait, but now most LCD TV screens have a display ratio
+        of 16:9, which will further widen the portrait. It can be said that I am very picky. Below is a classic
+        experimental picture illustrating the faces under different films.</p>
+      <img src="faceOnCamera.png" alt="" style="width: 500px; height: 500px">
+
+    </section>
+
+    <section>
+
+      <LoseWeight></LoseWeight>
+    </section>
+
   </div>
 </Scroller>
 
