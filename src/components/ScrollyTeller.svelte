@@ -127,8 +127,10 @@
     padding: 20px;
     background-color: #a27eac;
     display: flex; /* Use flexbox for positioning the child */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: left; /* Center horizontally */
+    align-items: left; /* Center vertically */
     flex-direction: column; /* Stack children vertically */
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
   }
 </style>
