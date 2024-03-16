@@ -55,10 +55,6 @@
       </div>
       <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
-
-    <section style="background-color:#b37eb5;">
-    </section>
-
     
     <section>
       <TraineeDebutRate />
