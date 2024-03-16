@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative; /* Added to position the buttons absolutely relative to this container */
   }
 
   img {
@@ -31,13 +32,46 @@
   }
 
   button {
-    padding: 10px;
+    padding: 0; /* Changed from 10px to 0 to remove padding */
     cursor: pointer;
+    background-color: white; /* Button background color */
+    border: none;
+    position: absolute; /* Position buttons absolutely */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    border-radius: 50%; /* Make button round */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+  }
+
+  /* Create the arrow inside the button using pseudo-elements */
+  button::before {
+    content: '';
+    display: inline-block;
+    border: solid black;
+    border-width: 0 3px 3px 0; /* Controls the thickness of the arrow */
+    padding: 10px; /* Arrow size */
+    transform: translate(-50%, -50%) rotate(45deg); /* Adjust these values to change the arrow's angle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  /* Adjust button positioning */
+  .carousel-container > button:first-child {
+    left: 10px;
+    transform: translateY(-50%) rotate(-135deg);
+  }
+
+  .carousel-container > button:last-child {
+    right: 10px;
+    transform: translateY(-50%) rotate(45deg);
   }
 </style>
 
 <div class="carousel-container">
-  <button on:click={showPrevious}>Previous</button>
+  <button on:click={showPrevious}></button>
   <img src={images[currentImageIndex]} alt="Carousel Image">
-  <button on:click={showNext}>Next</button>
+  <button on:click={showNext}></button>
 </div>
