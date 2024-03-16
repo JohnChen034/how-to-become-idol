@@ -40,7 +40,7 @@
         background-color: #b37eb5;
         display: flex; /* Use flexbox for positioning the child */
         justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        align-items: flex-start; /* Center vertically */
         flex-direction: column; /* Stack children vertically */
     }
 </style>
