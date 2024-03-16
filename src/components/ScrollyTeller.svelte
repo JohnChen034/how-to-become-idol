@@ -48,10 +48,10 @@
     </section>
 
 
-    <section style="background-color:#b37eb5;">
+    <section style="background-color:#b37eb5;" style="padding-left:20px">
       <div class="container">
         <BTSone />
-      <div/>
+      </div>
     </section>
 
 
@@ -127,8 +127,8 @@
     padding: 20px;
     background-color: #a27eac;
     display: flex; /* Use flexbox for positioning the child */
-    justify-content: left; /* Center horizontally */
-    align-items: left; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-direction: column; /* Stack children vertically */
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
