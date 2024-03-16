@@ -34,7 +34,7 @@
   button {
     padding: 0; /* Changed from 10px to 0 to remove padding */
     cursor: pointer;
-    background-color: white; /* Button background color */
+    background-color: #C5C5C5; /* Button background color */
     border: none;
     position: absolute; /* Position buttons absolutely */
     top: 50%; /* Center vertically */
@@ -52,7 +52,7 @@
     border: solid black;
     border-width: 0 3px 3px 0; /* Controls the thickness of the arrow */
     padding: 10px; /* Arrow size */
-    transform: translate(-50%, -50%) rotate(45deg); /* Adjust these values to change the arrow's angle */
+    transform: translate(-50%, -50%) rotate(90deg); /* Adjust these values to change the arrow's angle */
     position: absolute;
     top: 50%;
     left: 50%;
