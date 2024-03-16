@@ -48,7 +48,7 @@
     </section>
 
 
-    <section style="background-color:#b37eb5; justify-content: flex-start; flex-direction: row;">
+    <section style="background-color:#b37eb5;">
       <div class="container">
         <BTSone />
       </div>
