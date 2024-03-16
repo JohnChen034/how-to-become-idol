@@ -1,10 +1,10 @@
 <script>
   let images = [
-    '.static/difficulty1.PNG',
-    '.static/difficulty2.PNG',
-    '.static/difficulty3.PNG',
-    '.static/difficulty4.PNG',
-    '.static/difficulty5.PNG'
+    'static/difficulty1.PNG',
+    'static/difficulty2.PNG',
+    'static/difficulty3.PNG',
+    'static/difficulty4.PNG',
+    'static/difficulty5.PNG'
   ];
   let currentImageIndex = 0;
 
