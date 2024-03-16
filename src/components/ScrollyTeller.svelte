@@ -165,7 +165,8 @@
     flex-direction: column; /* Stack children vertically */
   }
 
-  .container {
+  .container
+  .loseWeight_container {
     height: 80vh;
     width: 75vw;
     gap: 20px;
