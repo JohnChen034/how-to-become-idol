@@ -2,8 +2,8 @@
   import { onMount } from 'svelte';
 
   let sentences = [
-    "BTS is one of the most successful boy bands in South Korea",
-    ", with a global fan base and sold-out concerts wherever they go.",
+    "BTS is one of the most successful boy bands in South Korea, ",
+    "with a global fan base and sold-out concerts wherever they go.",
     "You know what",
     "Behind their tremendous success, there lies an unseen side of hardships."
   ];
@@ -28,7 +28,7 @@
     animation: fadeIn 1s forwards;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 80px;
+    font-size: 40px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     text-align: center;
