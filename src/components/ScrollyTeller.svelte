@@ -112,24 +112,24 @@
 
 
     <section>
-      <Conclusion />
+      <Conclusion {index}/>
     </section>
 
 
     <section>
-      <ConclusionTwo />
+      <ConclusionTwo {index}/>
     </section>
 
     <section style="justify-content: flex-start; flex-direction: row;">
-      <VizExplain />
+      <VizExplain {index}/>
     </section>
 
     <section>
-      <YouShouldKnow />
+      <YouShouldKnow {index}/>
     </section>
 
     <section>
-      <YouShouldKnowTwo />
+      <YouShouldKnowTwo {index}/>
     </section>
   </div>
 </Scroller>
