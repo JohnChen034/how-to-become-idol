@@ -23,11 +23,12 @@
 </style>
 
 {#if index > 12}
-<div class="a">
-    <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
-        Why We Succeed Explaining
-      </h1>
-      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
-        We not only show and explain everything a trainee has to do before debut, but also provide real example of people who have experienced the path becoming a super idol
-      </p>
-</div>
+    <div class="a">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
+            Why We Succeed Explaining
+        </h1>
+        <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+            We not only show and explain everything a trainee has to do before debut, but also provide real example of people who have experienced the path becoming a super idol
+        </p>
+    </div>
+{/if}
