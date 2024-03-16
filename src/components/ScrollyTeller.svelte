@@ -59,11 +59,6 @@
     <section style="background-color:#b37eb5;">
       <BTStwo />
     </section>
-    
-    <section>
-      <TraineeDebutRate />
-    </section>
-
   </div>
 </Scroller>
 
