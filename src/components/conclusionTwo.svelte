@@ -22,7 +22,7 @@
     }
 </style>
 
-{#if index > 9}
+{#if index > 11}
 <div class="a">
     <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
         The path from a nobody to a super idol is extremely tough and difficult!!!

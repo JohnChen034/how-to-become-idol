@@ -20,7 +20,7 @@
     }
 </style>
 
-{#if index > 8}
+{#if index > 10}
 
 <div class="a">
     <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">

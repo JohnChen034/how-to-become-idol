@@ -22,7 +22,7 @@
     }
 </style>
 
-{#if index > 11}
+{#if index > 13}
 <div class="a">
     <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:120px; color:#393537;">
         One Thing You Should Know
