@@ -49,7 +49,7 @@
   button::before {
     content: '';
     display: inline-block;
-    border: solid black;
+    border: #3B3B3B;
     border-width: 0 3px 3px 0; /* Controls the thickness of the arrow */
     padding: 10px; /* Arrow size */
     transform: translate(-50%, -50%) rotate(270deg); /* Adjust these values to change the arrow's angle */
