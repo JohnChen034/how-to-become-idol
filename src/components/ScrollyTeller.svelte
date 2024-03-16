@@ -3,7 +3,6 @@
   import Hook from "./hook.svelte"
   import BTSone from "./BTSone.svelte"
   import BTStwo from "./BTStwo.svelte"
-  import Timeline from './Timeline.svelte';
   import TraineeDebutRate from "./TraineeDebutRate.svelte";
   import Scroller from "@sveltejs/svelte-scroller";
   import Bmi_graph from "./bmi_graph.svelte";
@@ -100,10 +99,14 @@
 
 
     <section>
-      <h1>Faces under Camera</h1>
-      <p>Taking pictures with a lens will naturally widen the portrait, but now most LCD TV screens have a display ratio
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+        Faces under Camera
+      </h1>
+      <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
+        Taking pictures with a lens will naturally widen the portrait, but now most LCD TV screens have a display ratio
         of 16:9, which will further widen the portrait. It can be said that I am very picky. Below is a classic
-        experimental picture illustrating the faces under different films.</p>
+        experimental picture illustrating the faces under different films.
+      </p>
       <img src="faceOnCamera.png" alt="" style="width: 500px; height: 500px">
     </section>
 
