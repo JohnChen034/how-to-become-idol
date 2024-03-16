@@ -68,7 +68,9 @@
 
     <section>
 
-      <h1>What aspects do the companies apply to filters applicants?</h1>
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+        What aspects do the companies apply to filters applicants?
+      </h1>
 
     </section>
     <section>
@@ -79,12 +81,12 @@
 
     <section>
       <div style="    display: flex;
-    justify-content: center; /* Align horizontal center */
-    align-items: center; /* Align vertical center */
-    text-align: center;">
-        <h1>How skinny idols are expected to be?</h1>
-
-
+        justify-content: center; /* Align horizontal center */
+        align-items: center; /* Align vertical center */
+        text-align: center;">
+        <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+          How skinny idols are expected to be?
+        </h1>
       </div>
     </section>
 
@@ -136,7 +138,7 @@
   section {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* 20% opaque */
+    background-color: #b37eb5;
     outline: magenta solid 3px;
     text-align: center;
     color: black;
