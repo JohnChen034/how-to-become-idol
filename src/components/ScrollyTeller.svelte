@@ -56,9 +56,10 @@
       <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
 
+
     <section style="background-color:#b37eb5;">
       <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
-        See How Tough BTS Suffered Before Debut
+        Let's See How Tough BTS Suffered Before Debut!!!
       </h1>
       <BTStwo />
     </section>
@@ -70,17 +71,16 @@
 
 
     <section>
-
       <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
         What aspects do the companies apply to filters applicants?
       </h1>
-
     </section>
+
+
     <section>
-
       <Talents></Talents>
-
     </section>
+
 
     <section>
       <div style="display: flex;
@@ -95,9 +95,9 @@
 
 
     <section>
-
       <Bmi_graph></Bmi_graph>
     </section>
+
 
     <section>
       <h1>Faces under Camera</h1>
@@ -105,14 +105,12 @@
         of 16:9, which will further widen the portrait. It can be said that I am very picky. Below is a classic
         experimental picture illustrating the faces under different films.</p>
       <img src="faceOnCamera.png" alt="" style="width: 500px; height: 500px">
-
     </section>
+
 
     <section>
-
       <LoseWeight></LoseWeight>
     </section>
-
   </div>
 </Scroller>
 

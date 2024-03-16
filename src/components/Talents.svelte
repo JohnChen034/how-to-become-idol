@@ -108,12 +108,15 @@
         border-radius: 5px; /* Rounded corners */
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition for the hover effect */
         cursor: pointer; /* Changes the mouse cursor to indicate these are interactive */
+        font-family: 'IBM Plex Sans', sans-serif;
     }
 
 
 </style>
 
-<h1>In general, companies look at these aspects:</h1>
+<h1 style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;">
+    In general, companies look at these aspects:
+</h1>
 
 
 <div class="talents-container">

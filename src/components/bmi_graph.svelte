@@ -150,7 +150,9 @@
     }
 </script>
 
-<p>'As u see in the graphs, the range of bmi are mostly underweight for male and especially female idols'</p>
+<p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:80px; color:#393537;"> 
+    As u see in the graphs, the range of bmi are mostly underweight for male and especially female idols
+</p>
 <svg id="scatter-plot-male" width="500" height="400"></svg>
 <svg id="scatter-plot-female" width="500" height="400"></svg>
 
@@ -163,5 +165,8 @@
     svg {
         margin-left: 50px;
         /*margin-top: 20px;*/
+        font-family: 'IBM Plex Sans', sans-serif; 
+        font-weight: 600; font-size:10px; 
+        color:#393537;
     }
 </style>
