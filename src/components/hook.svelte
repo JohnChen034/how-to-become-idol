@@ -32,7 +32,7 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     text-align: center;
-    color: white; /* dark Grey */;
+    color: #393537; /* dark Grey */;
   }
 
   @keyframes fadeIn {

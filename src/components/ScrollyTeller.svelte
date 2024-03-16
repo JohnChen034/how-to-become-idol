@@ -80,7 +80,7 @@
     </section>
 
     <section>
-      <div style="    display: flex;
+      <div style="display: flex;
         justify-content: center; /* Align horizontal center */
         align-items: center; /* Align vertical center */
         text-align: center;">
