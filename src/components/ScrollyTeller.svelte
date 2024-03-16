@@ -52,6 +52,7 @@
       <div class="container">
         <BTSone />
       </div>
+      <img src="bts.jpg" alt="bts member photo" />
     </section>
 
 
@@ -121,7 +122,7 @@
   }
 
   .container {
-    height: 95vh;
+    height: 80vh;
     width: 50vw;
     gap: 20px;
     padding: 20px;
