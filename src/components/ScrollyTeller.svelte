@@ -55,6 +55,10 @@
       </div>
       <img src="bts.png" alt="bts member photo" class="bts-member"/>
     </section>
+
+    <section>
+      <BTStwo />
+    </section>
     
     <section>
       <TraineeDebutRate />
