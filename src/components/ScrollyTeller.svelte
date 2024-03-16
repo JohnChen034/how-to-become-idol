@@ -65,10 +65,6 @@
       <TraineeDebutRate />
     </section>
 
-    
-    <section>
-    </section>
-
   </div>
 </Scroller>
 
