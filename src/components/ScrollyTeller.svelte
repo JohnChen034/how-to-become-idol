@@ -11,8 +11,8 @@
   import TransitionOne from "./TransitionOne.svelte";
   import TransitionTwo from "./TransitionTwo.svelte";
   import Transition3 from "./Transition3.svelte";
-  import Conclusion from "./conclsion.svelte"
-  import ConclusionTwo from "./conclsion.svelte"
+  import Conclusion from "./conclusion.svelte"
+  import ConclusionTwo from "./conclusionTwo.svelte"
   import VizExplain from "./vizExplain.svelte"
   import YouShouldKnow from "./youShouldKnow.svelte"
   import YouShouldKnowTwo from "./youShouldKnowTwo.svelte"
