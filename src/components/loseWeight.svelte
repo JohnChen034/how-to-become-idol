@@ -36,11 +36,11 @@
 </style>
 
 <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:50px; color:#393537;">
-    to maintain their body, idols usually have to consume only 30%-60% of their bmi
+    To maintain their body, idols usually have to consume only 30%-60% of their bmi
 </p>
 
 <div style="display: flex; flex-direction: row;">
-    <p style="width: 50%; margin-left: 10px font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:20px; color:#393537;">
+    <p style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size:20px; color:#393537;">
         On the left shows a day of food choices from Suzy Bae Sue Ji for 5 months. The total calories for her meals isonly 1300!
     </p>
     <p style="width: 50%"> on the right shows how much food 1300 calories equal to</p>
